@@ -93,7 +93,12 @@ export async function POST(req: Request) {
       lastMessage.usage.completion_tokens
     ) {
       inputTokens = lastMessage.usage.prompt_tokens;
-      outputTokens = lastMessage.usage.completion_tokens;
+      if (lastMessage.usage.completion_tokens_details.reasoning_tokens) {
+        outputTokens = lastMessage.usage.completion_tokens +
+                       lastMessage.usage.completion_tokens_details.reasoning_tokens;
+      } else {
+        outputTokens = lastMessage.usage.completion_tokens;
+      }
     } else {
       outputTokens = encode(lastMessage.content).length;
       const totalTokens = data.body.messages.reduce(
