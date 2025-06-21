@@ -59,8 +59,9 @@
       "goToUpdate": "Go to Update"
     },
     "language": {
-      "zh": "中",
-      "en": "EN"
+      "zh": "简体",
+      "en": "EN",
+      "zh-tw": "繁體"
     }
   },
 

@@ -66,7 +66,10 @@ export default function Header() {
               <span className="absolute -top-1 -right-1 flex items-center justify-center min-w-[18px] h-[18px] text-[10px] font-medium bg-gray-100 text-gray-600 rounded-full border border-gray-200 shadow-sm px-1 opacity-0 group-hover:opacity-100 transition-opacity">
                 {i18n.language === "zh"
                   ? t("header.language.zh")
-                  : t("header.language.en")}
+                  : i18n.language === "zh-tw"
+                    ? t("header.language.zh-tw")
+                    : t("header.language.en")
+                  }
               </span>
             </button>
           </div>
@@ -321,8 +324,19 @@ export default function Header() {
   const actionItems = [
     {
       icon: <Globe className="w-5 h-5" />,
-      label: i18n.language === "zh" ? "简体中文" : "English",
-      onClick: () => handleLanguageChange(i18n.language === "zh" ? "en" : "zh"),
+      label: i18n.language === "zh"
+        ? "简体中文"
+        : i18n.language === "zh-tw"
+        ? "繁體中文"
+        : "English",
+      onClick: () =>
+        handleLanguageChange(
+          i18n.language === "zh"
+            ? "en"
+            : i18n.language === "zh-tw"
+            ? "zh"
+            : "zh-tw"
+        ),
       color: "from-gray-100 to-gray-50",
       hoverColor: "group-hover:text-gray-900",
     },

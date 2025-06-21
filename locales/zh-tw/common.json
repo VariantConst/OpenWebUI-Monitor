@@ -1,0 +1,338 @@
+{
+    "common": {
+      "appName": "OpenWebUI Monitor",
+      "description": "專為 OpenWebUI 設計的用量監控和用戶餘額管理平台",
+      "loading": "載入中...",
+      "error": "載入失敗",
+      "confirm": "確認",
+      "cancel": "取消",
+      "save": "保存",
+      "edit": "編輯",
+      "delete": "刪除",
+      "close": "關閉",
+      "back": "返回",
+      "currency": "¥",
+      "count": "次",
+      "total": "總計",
+      "prev": "上一頁",
+      "next": "下一頁",
+      "page": "頁",
+      "notSet": "未設置",
+      "enterValue": "請輸入"
+    },
+  
+    "auth": {
+      "accessToken": "訪問令牌",
+      "accessTokenPlaceholder": "請輸入訪問令牌",
+      "accessTokenHelp": "ACCESS_TOKEN 環境變數",
+      "accessTokenRequired": "請輸入訪問令牌",
+      "showToken": "顯示令牌",
+      "verifying": "驗證中...",
+      "verificationFailed": "驗證失敗",
+      "unauthorized": "未授權，請重新登入",
+      "invalidToken": "無效的訪問令牌",
+      "loginSuccess": "令牌驗證成功"
+    },
+  
+    "header": {
+      "menu": {
+        "copyApiKey": "複製 API KEY",
+        "dataBackup": "數據遷移",
+        "checkUpdate": "檢查更新",
+        "logout": "退出登錄",
+        "settings": "設置",
+        "title": "選項"
+      },
+      "messages": {
+        "unauthorized": "未授權，請重新登入",
+        "apiKeyNotSet": "API 金鑰未設置或載入失敗",
+        "apiKeyCopied": "API 金鑰已複製到剪貼簿",
+        "updateCheckFailed": "檢查更新失敗",
+        "latestVersion": "當前已是最新版本",
+        "getVersionFailed": "獲取版本號失敗"
+      },
+      "update": {
+        "newVersion": "發現新版本",
+        "currentVersion": "當前版本",
+        "latestVersion": "最新版本",
+        "skipUpdate": "暫不更新",
+        "goToUpdate": "前往更新"
+      },
+      "language": {
+        "zh": "簡體",
+        "en": "EN",
+        "zh-tw": "繁體"
+      }
+    },
+  
+    "home": {
+      "features": {
+        "models": {
+          "title": "模型管理",
+          "description": "OpenWebUI 提供模型的價格管理"
+        },
+        "users": {
+          "title": "用戶管理",
+          "description": "用戶資訊查詢和餘額管理"
+        },
+        "stats": {
+          "title": "使用統計",
+          "description": "使用統計數據和可視化"
+        }
+      }
+    },
+  
+    "models": {
+      "title": "模型管理",
+      "description": "管理所有可用模型的價格配置。",
+      "testAll": "測試全部模型",
+      "exportConfig": "導出配置",
+      "importConfig": "導入配置",
+      "syncWithBaseModel": "同步上游模型價格",
+      "syncAllDerivedModels": "同步所有派生模型價格",
+      "syncSuccess": "價格同步成功",
+      "syncFail": "價格同步失敗",
+      "syncAllSuccess": "所有派生模型價格同步成功",
+      "syncAllFail": "部分派生模型價格同步失敗",
+      "noBaseModel": "該模型沒有上游模型",
+      "baseModelNotFound": "未找到上游模型",
+      "noDerivedModels": "沒有找到派生模型",
+      "syncing": "同步中",
+      "syncTooltip": "將基礎模型的價格同步到所有派生模型。這將根據基礎模型的價格更新所有派生模型的價格。",
+      "testTooltip": "點擊模型圖示可進行單獨測試，測試結果將顯示在圖示右上角。",
+      "test": {
+        "status": {
+          "valid": "有效",
+          "invalid": "無效",
+          "pending": "等待中",
+          "testing": "測試中",
+          "complete": "測試完成"
+        },
+        "progress": {
+          "title": "測試進度",
+          "detail": "點擊卡片查看詳細資訊"
+        },
+        "result": {
+          "success": "有效模型",
+          "failed": "無效模型",
+          "complete": "測試完成，點擊卡片查看詳細資訊"
+        }
+      },
+      "table": {
+        "name": "模型",
+        "inputPrice": "輸入價格 ¥ / M tokens",
+        "outputPrice": "輸出價格 ¥ / M tokens",
+        "perMsgPrice": "每條消息價格 ¥ / 條",
+        "notSet": "未設置",
+        "mobile": {
+          "inputPrice": "輸入價格",
+          "outputPrice": "輸出價格",
+          "perMsgPrice": "每條消息"
+        },
+        "perMsgPriceTooltip": "每條消息的固定收費，如果設置為負數則按 token 計費",
+        "priceOverriddenByPerMsg": "已被每條消息價格覆蓋",
+        "enterPrice": "輸入價格"
+      },
+      "testing": "測試中",
+      "testComplete": "測試完成",
+      "testingModels": "正在測試模型",
+      "testSuccess": "測試成功",
+      "testFailed": "測試失敗",
+      "loading": "正在載入模型數據..."
+    },
+  
+    "users": {
+      "title": "用戶管理",
+      "description": "管理所有用戶的帳戶資訊和餘額。您可以查看用戶詳情、調整餘額或將用戶加入黑名單。",
+      "userInfo": "用戶資訊",
+      "balance": "餘額",
+      "id": "ID",
+      "name": "姓名",
+      "email": "信箱",
+      "role": "角色",
+      "userDetails": "用戶詳細資訊",
+      "nickname": "暱稱",
+      "message": {
+        "updateBalance": {
+          "success": "餘額更新成功",
+          "error": "更新餘額失敗"
+        },
+        "fetchUsersError": "獲取用戶列表失敗",
+        "invalidNumber": "請輸入有效的數字",
+        "deleteSuccess": "用戶刪除成功",
+        "deleteError": "刪除用戶失敗",
+        "blockSuccess": "用戶已成功封鎖",
+        "blockError": "封鎖用戶失敗",
+        "unblockSuccess": "已成功解除封鎖",
+        "unblockError": "解除封鎖失敗",
+        "fetchError": "獲取用戶列表失敗"
+      },
+      "actions": "操作",
+      "deleteConfirm": {
+        "title": "確認刪除用戶",
+        "description": "確定要刪除用戶 \"{{name}}\" 嗎？此操作無法撤銷，用戶的所有相關數據都將被刪除。"
+      },
+      "total": "共",
+      "totalRecords": "條紀錄",
+      "search": "搜索",
+      "searchPlaceholder": "搜索使用者名稱或信箱...",
+      "pressEnter": "按Enter 鍵搜索",
+      "blacklist": {
+        "title": "已封鎖用戶",
+        "block": "封鎖",
+        "unblock": "解除封鎖",
+        "blockConfirm": {
+          "title": "確認封鎖用戶",
+          "description": "確定要封鎖用戶 \"{{name}}\" 嗎？封鎖後該用戶將無法使用服務。"
+        },
+        "unblockConfirm": {
+          "title": "確認解除封鎖",
+          "description": "確定要解除對用戶 \"{{name}}\" 的封鎖嗎？解除後該用戶將可以繼續使用服務。"
+        }
+      },
+      "noResults": {
+        "title": "未找到用戶",
+        "default": "暫無用戶數據顯示。",
+        "withFilter": "未找到與 \"{{filter}}\" 匹配的用戶。"
+      },
+      "loading": "正在載入用戶數據..."
+    },
+  
+    "records": {
+      "title": "使用記錄",
+      "description": "查看所有用戶的模型使用記錄，包括使用時間、消耗的 tokens 和費用等詳細資訊。",
+      "export": "導出記錄",
+      "dateRange": "日期範圍",
+      "columns": {
+        "user": "用戶",
+        "model": "模型",
+        "tokens": "Tokens",
+        "cost": "費用",
+        "time": "時間",
+        "balance": "餘額"
+      }
+    },
+  
+    "update": {
+      "newVersion": "發現新版本",
+      "currentVersion": "當前版本",
+      "latestVersion": "最新版本",
+      "ignore": "忽略",
+      "update": "更新",
+      "skipUpdate": "暫不更新",
+      "goToUpdate": "前往更新"
+    },
+  
+    "backup": {
+      "title": "數據遷移",
+      "description": "導出或導入資料庫備份，方便遷移和恢復數據",
+      "export": {
+        "title": "導出數據",
+        "description": "將當前數據導出為備份文件",
+        "success": "導出成功",
+        "error": "導出失敗"
+      },
+      "import": {
+        "title": "導入數據",
+        "description": "從備份文件恢復數據",
+        "success": "導入成功",
+        "error": "導入失敗"
+      }
+    },
+  
+    "panel": {
+      "header": "使用統計看板 - OpenWebUI",
+      "title": "使用統計",
+      "byAmount": "按金額",
+      "byCount": "按次數",
+      "timeRange": {
+        "title": "時間範圍",
+        "timeOptions": {
+          "day": "今天",
+          "week": "本週",
+          "month": "本月",
+          "30Days": "近30天",
+          "all": "全部",
+          "custom": "自訂"
+        },
+        "customRange": "自訂範圍",
+        "selectTimeRange": "選擇時間範圍",
+        "selectDate": "選擇日期"
+      },
+      "modelUsage": {
+        "title": "模型使用",
+        "total": "總計",
+        "others": "其他"
+      },
+      "userUsageChart": {
+        "title": "用戶使用",
+        "yaxis": {
+          "byAmount": "消耗金額",
+          "byCount": "使用次數"
+        }
+      },
+      "usageDetails": {
+        "title": "使用詳情",
+        "table": {
+          "user": "用戶",
+          "time": "時間",
+          "model": "模型",
+          "tokens": "Tokens",
+          "cost": "費用",
+          "balance": "餘額"
+        }
+      },
+      "description": "查看模型使用情況、用戶消費數據和詳細使用記錄。",
+      "overview": {
+        "totalModels": "使用模型數",
+        "totalUsers": "活躍用戶數",
+        "totalCost": "總消費金額",
+        "totalCalls": "總調用次數",
+        "totalTokens": "總 Token 數"
+      },
+      "report": {
+        "daily": "今日報告",
+        "weekly": "本週報告",
+        "monthly": "本月報告",
+        "thirtyDays": "近30天報告",
+        "overall": "全時段報告",
+        "custom": "自訂時段報告",
+        "mostUsedModel": "最常用模型",
+        "topUser": "最活躍用戶",
+        "usageCount": "使用 {{count}} 次",
+        "spentAmount": "消費 ¥{{amount}}"
+      }
+    },
+    "error": {
+      "model": {
+        "failToFetchModels": "獲取模型失敗",
+        "unknownError": "未知錯誤",
+        "failToFetchApiKey": "獲取 API KEY 失敗",
+        "ApiKeyNotConfigured": "API KEY 未配置",
+        "ApiKeyNotFetched": "API KEY 未獲取",
+        "nonePositiveNumber": "請輸入有效的正數",
+        "invalidNumber": "請輸入有效的數字",
+        "priceUpdateFail": "更新價格失敗",
+        "priceUpdateSuccess": "更新價格成功",
+        "invalidImportFormat": "導入的數據格式不正確",
+        "batchPriceUpdateFail": "批次更新價格失敗",
+        "serverResponse": "伺服器返回的更新結果",
+        "updateSuccess": "成功更新",
+        "numberOfModelPrice": "個模型的價格",
+        "failToImport": "導入失敗",
+        "failToExport": "導出失敗",
+        "failToTest": "測試失敗",
+        "failToTestWithoutApiKey": "API Key 未獲取，無法進行測試"
+      },
+      "panel": {
+        "fetchUsageDataFail": "獲取使用數據失敗"
+      },
+      "records": {
+        "usageRecord": "使用記錄",
+        "exportRecord": "導出記錄"
+      },
+      "exceedsMaxValue": "輸入值不能超過 {{max}}",
+      "balanceExceedsLimit": "餘額超出最大限制"
+    }
+  }
+  

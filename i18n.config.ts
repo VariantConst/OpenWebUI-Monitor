@@ -4,6 +4,7 @@ import LanguageDetector from "i18next-browser-languagedetector";
 
 import enCommon from "@/locales/en/common.json";
 import zhCommon from "@/locales/zh/common.json";
+import zhtwCommon from "@/locales/zh-tw/common.json";
 
 i18n
   .use(LanguageDetector)
@@ -15,6 +16,9 @@ i18n
       },
       zh: {
         common: zhCommon,
+      },
+      zh-tw: {
+        common: zh-twCommon,
       },
     },
     fallbackLng: "zh",
