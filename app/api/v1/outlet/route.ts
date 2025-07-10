@@ -85,15 +85,17 @@ export async function POST(req: Request) {
 
     const lastMessage = data.body.messages[data.body.messages.length - 1];
 
+    let totalTokens: number;
     let inputTokens: number;
     let outputTokens: number;
     if (
       lastMessage.usage &&
       lastMessage.usage.prompt_tokens &&
-      lastMessage.usage.completion_tokens
+      lastMessage.usage.total_tokens
     ) {
+      totalTokens = lastMessage.usage.total_tokens;
       inputTokens = lastMessage.usage.prompt_tokens;
-      outputTokens = lastMessage.usage.completion_tokens;
+      outputTokens = totalTokens - inputTokens;
     } else {
       outputTokens = encode(lastMessage.content).length;
       const totalTokens = data.body.messages.reduce(
