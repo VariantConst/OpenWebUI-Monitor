@@ -85,5 +85,10 @@ export {
   getUsers,
   getOrCreateUser,
   updateUserBalance,
+  updateUserDefaultBalance,
+  resetAllBalancesToDefault,
+  resetUserBalanceToDefault,
+  getLastResetDate,
+  updateLastResetDate,
   deleteUser,
 } from "./users";

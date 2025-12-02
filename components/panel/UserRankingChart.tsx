@@ -112,9 +112,9 @@ const getBarOption = (
         fontSize: 12,
         formatter: (value: number) => {
           if (metric === "cost") {
-            return `¥${value.toFixed(1)}`;
+            return `${t("common.currency")}${value.toFixed(1)}`;
           }
-          return `${value}次`;
+          return `${value}${t("common.count")}`;
         },
       },
     },

@@ -145,6 +145,8 @@
     "description": "Manage user accounts and balances. You can view user details, adjust balances, or blacklist users.",
     "userInfo": "User Info",
     "balance": "Balance",
+    "defaultBalance": "Default Balance",
+    "resetBalance": "Reset to Default",
     "id": "ID",
     "name": "Name",
     "email": "Email",
@@ -155,6 +157,18 @@
       "updateBalance": {
         "success": "Balance updated successfully",
         "error": "Failed to update balance"
+      },
+      "updateDefaultBalance": {
+        "success": "Default balance updated successfully",
+        "error": "Failed to update default balance"
+      },
+      "resetBalances": {
+        "success": "All balances reset to default values",
+        "error": "Failed to reset balances"
+      },
+      "resetBalance": {
+        "success": "Balance reset to default value",
+        "error": "Failed to reset balance"
       },
       "fetchUsersError": "Failed to fetch user list",
       "invalidNumber": "Please enter a valid number",

@@ -145,6 +145,8 @@
     "description": "管理所有用户的账户信息和余额。您可以查看用户详情、调整余额或将用户加入黑名单。",
     "userInfo": "用户信息",
     "balance": "余额",
+    "defaultBalance": "默认余额",
+    "resetBalance": "重置为默认值",
     "id": "ID",
     "name": "姓名",
     "email": "邮箱",
@@ -155,6 +157,18 @@
       "updateBalance": {
         "success": "余额更新成功",
         "error": "更新余额失败"
+      },
+      "updateDefaultBalance": {
+        "success": "默认余额更新成功",
+        "error": "更新默认余额失败"
+      },
+      "resetBalances": {
+        "success": "所有余额已重置为默认值",
+        "error": "重置余额失败"
+      },
+      "resetBalance": {
+        "success": "余额已重置为默认值",
+        "error": "重置余额失败"
       },
       "fetchUsersError": "获取用户列表失败",
       "invalidNumber": "请输入有效的数字",

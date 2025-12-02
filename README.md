@@ -52,6 +52,7 @@ sudo docker compose up -d
 | DEFAULT_MODEL_PER_MSG_PRICE | Default model price for each message, in USD                                                                                                | `-1`          |
 | INIT_BALANCE                | Initial user balance                                                                                                                        | `0`           |
 | COST_ON_INLET               | Pre-deduction amount on inlet. Can be a fixed number for all models (e.g. `0.1`), or model-specific format (e.g. `gpt-4:0.32,gpt-3.5:0.01`) | `0`           |
+| BALANCE_RESET_DAY           | Day of month (1-31) when balances are automatically reset to default_balance. Set to `0` to disable auto-reset.                             | `1`           |
 
 ## Function Variable Configuration
 

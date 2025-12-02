@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { initDatabase } from "@/lib/db/client";
+import { initScheduler } from "@/lib/scheduler";
 
 let initialized = false;
 
@@ -7,6 +8,7 @@ export async function GET() {
   if (!initialized) {
     try {
       await initDatabase();
+      initScheduler();
       initialized = true;
       return NextResponse.json({ success: true, message: "数据库初始化成功" });
     } catch (error) {

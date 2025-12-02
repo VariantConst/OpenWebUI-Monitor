@@ -56,10 +56,10 @@ const MobileCard = ({
         </div>
         <div className="text-right">
           <div className="font-medium text-primary">
-            ¥{Number(record.cost).toFixed(4)}
+            {t("common.currency")}{Number(record.cost).toFixed(4)}
           </div>
           <div className="text-xs text-gray-500 mt-1">
-            {t("panel.usageDetails.table.balance")}: ¥
+            {t("panel.usageDetails.table.balance")}: {t("common.currency")}
             {Number(record.balance_after).toFixed(4)}
           </div>
         </div>

@@ -41,7 +41,7 @@ export async function GET(req: NextRequest) {
     const total = parseInt(countResult.rows[0].count);
 
     const result = await query(
-      `SELECT id, email, name, role, balance, deleted, created_at 
+      `SELECT id, email, name, role, balance, default_balance, deleted, created_at 
        FROM users 
        ${whereClause} 
        ${

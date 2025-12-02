@@ -26,8 +26,8 @@ RUN pnpm install --no-frozen-lockfile --registry=https://registry.npmmirror.com
 # 复制项目文件
 COPY . .
 
-# 添加执行权限到启动脚本
-RUN chmod +x start.sh
+# 修复 Windows line endings 并添加执行权限
+RUN sed -i 's/\r$//' start.sh && chmod +x start.sh
 
 # 构建应用
 RUN pnpm build
