@@ -881,7 +881,7 @@ export default function ModelsPage() {
   };
 
   if (error) {
-    return <div className="p-4 text-red-500">错误: {error}</div>;
+    return <div className="p-4 text-red-500">{t("common.error")}: {error}</div>;
   }
 
   return (

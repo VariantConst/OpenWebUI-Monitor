@@ -202,6 +202,8 @@
     "description": "查看所有用户的模型使用记录，包括使用时间、消耗的 tokens 和费用等详细信息。",
     "export": "导出记录",
     "dateRange": "日期范围",
+    "input": "输入",
+    "output": "输出",
     "columns": {
       "user": "用户",
       "model": "模型",

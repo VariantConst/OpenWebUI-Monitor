@@ -14,7 +14,7 @@ export default function AuthCheck({ children }: { children: React.ReactNode }) {
       try {
         await fetch("/api/init");
       } catch (error) {
-        console.error("初始化数据库失败:", error);
+        console.error("Failed to initialize database:", error);
       }
     };
 

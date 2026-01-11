@@ -1,0 +1,339 @@
+{
+  "common": {
+    "appName": "OpenWebUI Monitor",
+    "description": "Plataforma de monitoreo de uso y gestión de saldos para OpenWebUI",
+    "loading": "Cargando...",
+    "error": "Error al cargar",
+    "confirm": "Confirmar",
+    "cancel": "Cancelar",
+    "save": "Guardar",
+    "edit": "Editar",
+    "delete": "Eliminar",
+    "close": "Cerrar",
+    "back": "Atrás",
+    "currency": "$",
+    "count": "",
+    "total": "Total",
+    "prev": "Anterior",
+    "next": "Siguiente",
+    "page": "Página",
+    "notSet": "No Establecido",
+    "enterValue": "Ingrese Valor"
+  },
+
+  "auth": {
+    "accessToken": "Token de Acceso",
+    "accessTokenPlaceholder": "Por favor ingrese el token de acceso",
+    "accessTokenHelp": "Variable de Entorno ACCESS_TOKEN",
+    "accessTokenRequired": "Por favor ingrese el token de acceso",
+    "showToken": "Mostrar Token",
+    "verifying": "Verificando...",
+    "verificationFailed": "Verificación fallida",
+    "unauthorized": "No autorizado, por favor inicie sesión nuevamente",
+    "invalidToken": "Token de acceso inválido",
+    "loginSuccess": "Verificación de token exitosa"
+  },
+
+  "header": {
+    "menu": {
+      "copyApiKey": "Copiar API KEY",
+      "dataBackup": "Migración de Datos",
+      "checkUpdate": "Buscar Actualización",
+      "logout": "Cerrar Sesión",
+      "settings": "Configuración",
+      "title": "Opciones"
+    },
+    "messages": {
+      "unauthorized": "No autorizado, por favor inicie sesión nuevamente",
+      "apiKeyNotSet": "Clave API no establecida o no se pudo cargar",
+      "apiKeyCopied": "Clave API copiada al portapapeles",
+      "updateCheckFailed": "Error al buscar actualizaciones",
+      "latestVersion": "La versión actual está actualizada",
+      "getVersionFailed": "Error al obtener el número de versión"
+    },
+    "update": {
+      "newVersion": "Nueva Versión Disponible",
+      "currentVersion": "Versión Actual",
+      "latestVersion": "Última Versión",
+      "skipUpdate": "Omitir Actualización",
+      "goToUpdate": "Ir a Actualizar"
+    },
+    "language": {
+      "zh": "中",
+      "en": "EN",
+      "es": "ES"
+    }
+  },
+
+  "home": {
+    "features": {
+      "models": {
+        "title": "Modelo",
+        "description": "Gestión de Precios"
+      },
+      "users": {
+        "title": "Usuario",
+        "description": "Gestión de Saldos"
+      },
+      "stats": {
+        "title": "Uso",
+        "description": "Estadísticas y Visualización"
+      }
+    }
+  },
+
+  "models": {
+    "title": "Gestión de Modelos",
+    "description": "Gestione las configuraciones de precios para todos los modelos disponibles.",
+    "testAll": "Probar Todos los Modelos",
+    "exportConfig": "Exportar",
+    "importConfig": "Importar",
+    "syncWithBaseModel": "Sincronizar con Modelo Base",
+    "syncAllDerivedModels": "Sincronizar Todos los Modelos Derivados",
+    "syncSuccess": "Precio sincronizado exitosamente",
+    "syncFail": "Error al sincronizar precio",
+    "syncAllSuccess": "Todos los modelos derivados sincronizados exitosamente",
+    "syncAllFail": "Algunos modelos derivados no se pudieron sincronizar",
+    "noBaseModel": "Este modelo no tiene modelo base",
+    "baseModelNotFound": "Modelo base no encontrado",
+    "noDerivedModels": "No se encontraron modelos derivados",
+    "syncing": "Sincronizando",
+    "syncTooltip": "Sincronizar precios de modelos base a todos los modelos derivados. Esto actualizará los precios de todos los modelos derivados según los precios de su modelo base.",
+    "testTooltip": "Haga clic en el ícono del modelo para probar individualmente, los resultados de la prueba se mostrarán en la esquina superior derecha del ícono.",
+    "test": {
+      "status": {
+        "valid": "Válido",
+        "invalid": "Inválido",
+        "pending": "Pendiente",
+        "testing": "Probando",
+        "complete": "Completo"
+      },
+      "progress": {
+        "title": "Progreso de Prueba",
+        "detail": "Haga clic en la tarjeta para más detalles"
+      },
+      "result": {
+        "success": "Modelos Válidos",
+        "failed": "Modelos Inválidos",
+        "complete": "Prueba completa, haga clic en la tarjeta para más detalles"
+      }
+    },
+    "table": {
+      "name": "Modelo",
+      "inputPrice": "Precio de Entrada $ / M tokens",
+      "outputPrice": "Precio de Salida $ / M tokens",
+      "perMsgPrice": "Precio por Mensaje $ / Mensaje",
+      "notSet": "No Establecido",
+      "mobile": {
+        "inputPrice": "Precio de Entrada",
+        "outputPrice": "Precio de Salida",
+        "perMsgPrice": "Por Mensaje"
+      },
+      "perMsgPriceTooltip": "Establezca un valor negativo para cobrar por tokens en lugar de por mensaje",
+      "enterPrice": "Ingrese precio",
+      "priceOverriddenByPerMsg": "Sobrescrito por precio por mensaje"
+    },
+    "testing": "Probando",
+    "testComplete": "Prueba Completa",
+    "testingModels": "Probando Modelos",
+    "testSuccess": "Éxito",
+    "testFailed": "Fallido",
+    "loading": "Cargando datos de modelos..."
+  },
+
+  "users": {
+    "title": "Gestión de Usuarios",
+    "description": "Gestione cuentas de usuario y saldos. Puede ver detalles de usuario, ajustar saldos o bloquear usuarios.",
+    "userInfo": "Información de Usuario",
+    "balance": "Saldo",
+    "id": "ID",
+    "name": "Nombre",
+    "email": "Correo Electrónico",
+    "role": "Rol",
+    "userDetails": "Detalles de Usuario",
+    "nickname": "Apodo",
+    "message": {
+      "updateBalance": {
+        "success": "Saldo actualizado exitosamente",
+        "error": "Error al actualizar saldo"
+      },
+      "fetchUsersError": "Error al obtener lista de usuarios",
+      "invalidNumber": "Por favor ingrese un número válido",
+      "deleteSuccess": "Usuario eliminado exitosamente",
+      "deleteError": "Error al eliminar usuario",
+      "blockSuccess": "Usuario bloqueado exitosamente",
+      "blockError": "Error al bloquear usuario",
+      "unblockSuccess": "Usuario desbloqueado exitosamente",
+      "unblockError": "Error al desbloquear usuario",
+      "fetchError": "Error al obtener lista de usuarios"
+    },
+    "actions": "Acciones",
+    "deleteConfirm": {
+      "title": "Confirmar Eliminación de Usuario",
+      "description": "¿Está seguro de que desea eliminar al usuario \"{{name}}\"? Esta acción no se puede deshacer y todos los datos relacionados serán eliminados."
+    },
+    "total": "Total",
+    "totalRecords": "registros",
+    "search": "Buscar",
+    "searchPlaceholder": "Buscar por nombre o correo electrónico...",
+    "pressEnter": "Presione Enter para buscar",
+    "blacklist": {
+      "title": "Usuarios Bloqueados",
+      "block": "Bloquear",
+      "unblock": "Desbloquear",
+      "blockConfirm": {
+        "title": "Confirmar Bloqueo de Usuario",
+        "description": "¿Está seguro de que desea bloquear al usuario \"{{name}}\"? No podrán usar el servicio después de ser bloqueados."
+      },
+      "unblockConfirm": {
+        "title": "Confirmar Desbloqueo de Usuario",
+        "description": "¿Está seguro de que desea desbloquear al usuario \"{{name}}\"? Podrán usar el servicio nuevamente después de ser desbloqueados."
+      }
+    },
+    "noResults": {
+      "title": "No se encontraron usuarios",
+      "default": "No hay usuarios para mostrar en este momento.",
+      "withFilter": "No se encontraron usuarios que coincidan con \"{{filter}}\"."
+    },
+    "loading": "Cargando datos de usuarios..."
+  },
+
+  "records": {
+    "title": "Registros de Uso",
+    "description": "Vea registros detallados de uso de modelos para todos los usuarios, incluido el tiempo de uso, tokens consumidos y costos.",
+    "export": "Exportar Registros",
+    "dateRange": "Rango de Fechas",
+    "input": "Entrada",
+    "output": "Salida",
+    "columns": {
+      "user": "Usuario",
+      "model": "Modelo",
+      "tokens": "Tokens",
+      "cost": "Costo",
+      "time": "Tiempo",
+      "balance": "Saldo"
+    }
+  },
+
+  "update": {
+    "newVersion": "Nueva Versión Disponible",
+    "currentVersion": "Versión Actual",
+    "latestVersion": "Última Versión",
+    "ignore": "Ignorar",
+    "update": "Actualizar",
+    "skipUpdate": "Omitir Actualización",
+    "goToUpdate": "Ir a Actualizar"
+  },
+
+  "backup": {
+    "title": "Migración de Datos",
+    "description": "Exporte o importe copias de seguridad de la base de datos para migración y recuperación",
+    "export": {
+      "title": "Exportar Datos",
+      "description": "Exportar datos actuales como archivo de respaldo",
+      "success": "Exportación exitosa",
+      "error": "Error en la exportación"
+    },
+    "import": {
+      "title": "Importar Datos",
+      "description": "Restaurar datos desde archivo de respaldo",
+      "success": "Importación exitosa",
+      "error": "Error en la importación"
+    }
+  },
+
+  "panel": {
+    "header": "Panel de Estadísticas de Uso - OpenWebUI",
+    "title": "Estadísticas de Uso",
+    "byAmount": "Por Monto",
+    "byCount": "Por Cantidad",
+    "timeRange": {
+      "title": "Rango de Tiempo",
+      "timeOptions": {
+        "day": "Hoy",
+        "week": "Semana",
+        "month": "Mes",
+        "30Days": "30 Días",
+        "all": "Todo",
+        "custom": "Personalizado"
+      },
+      "customRange": "Rango Personalizado",
+      "selectTimeRange": "Seleccionar Rango de Tiempo",
+      "selectDate": "Seleccionar Fecha"
+    },
+    "modelUsage": {
+      "title": "Uso de Modelos",
+      "total": "Total",
+      "others": "Otros"
+    },
+    "userUsageChart": {
+      "title": "Uso de Usuarios",
+      "yaxis": {
+        "byAmount": "Monto Gastado",
+        "byCount": "Cantidad de Usos"
+      }
+    },
+    "usageDetails": {
+      "title": "Detalles de Uso",
+      "table": {
+        "user": "Usuario",
+        "time": "Tiempo",
+        "model": "Modelo",
+        "tokens": "Tokens",
+        "cost": "Costo",
+        "balance": "Saldo"
+      }
+    },
+    "description": "Vea el uso de modelos, datos de consumo de usuarios y registros de uso detallados.",
+    "overview": {
+      "totalModels": "Modelos Usados",
+      "totalUsers": "Usuarios Activos",
+      "totalCost": "Costo Total",
+      "totalCalls": "Llamadas Totales",
+      "totalTokens": "Tokens Totales"
+    },
+    "report": {
+      "daily": "Reporte Diario",
+      "weekly": "Reporte Semanal",
+      "monthly": "Reporte Mensual",
+      "thirtyDays": "Reporte de 30 Días",
+      "overall": "Reporte General",
+      "custom": "Reporte de Período Personalizado",
+      "mostUsedModel": "Modelo Más Usado",
+      "topUser": "Usuario Principal",
+      "usageCount": "{{count}} veces",
+      "spentAmount": "${{amount}} gastado"
+    }
+  },
+  "error": {
+    "model": {
+      "failToFetchModels": "Error al obtener modelos",
+      "unknownError": "Error desconocido",
+      "failToFetchApiKey": "Error al obtener API KEY",
+      "ApiKeyNotConfigured": "API KEY no configurada",
+      "ApiKeyNotFetched": "API KEY no obtenida",
+      "nonePositiveNumber": "Por favor ingrese un número positivo válido",
+      "invalidNumber": "Por favor ingrese un número válido",
+      "priceUpdateFail": "Error al actualizar precio",
+      "priceUpdateSuccess": "Precio actualizado exitosamente",
+      "invalidImportFormat": "Formato de datos de importación inválido",
+      "batchPriceUpdateFail": "Error en actualización masiva de precios",
+      "serverResponse": "Resultado de actualización de respuesta del servidor",
+      "updateSuccess": "Actualización exitosa",
+      "numberOfModelPrice": "precio(s) de modelo(s)",
+      "failToImport": "Error al importar",
+      "failToExport": "Error al exportar",
+      "failToTest": "Error en la prueba",
+      "failToTestWithoutApiKey": "API Key no obtenida, no se puede probar"
+    },
+    "panel": {
+      "fetchUsageDataFail": "Error al obtener datos de uso"
+    },
+    "records": {
+      "usageRecord": "Registro de uso",
+      "exportRecord": "Exportar registro"
+    },
+    "exceedsMaxValue": "El valor ingresado no puede exceder {{max}}",
+    "balanceExceedsLimit": "El saldo excede el límite máximo"
+  }
+}

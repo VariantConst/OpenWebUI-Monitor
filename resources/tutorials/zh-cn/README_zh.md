@@ -4,7 +4,7 @@
 
 # OpenWebUI Monitor
 
-[English](../../../README.md) / **简体中文**
+[English](../../../README.md) / **简体中文** / [Español](../es/README_es.md)
 
 </div>
 
