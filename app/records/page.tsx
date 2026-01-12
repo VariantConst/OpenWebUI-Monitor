@@ -94,9 +94,9 @@ export default function RecordsPage() {
       width: 120,
       render: (input, record) => (
         <div className="space-y-1">
-          <div className="text-xs text-muted-foreground">输入: {input}</div>
+          <div className="text-xs text-muted-foreground">{t("records.input")}: {input}</div>
           <div className="text-xs text-muted-foreground">
-            输出: {record.output_tokens}
+            {t("records.output")}: {record.output_tokens}
           </div>
         </div>
       ),

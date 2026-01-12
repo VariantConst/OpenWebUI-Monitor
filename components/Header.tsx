@@ -56,19 +56,41 @@ export default function Header() {
             <div className="text-xl font-semibold bg-gradient-to-r from-gray-900 via-indigo-800 to-gray-900 bg-clip-text text-transparent">
               {t("common.appName")}
             </div>
-            <button
-              className="p-2 rounded-lg hover:bg-gray-50/80 transition-colors relative group"
-              onClick={() =>
-                handleLanguageChange(i18n.language === "zh" ? "en" : "zh")
-              }
+            <Dropdown
+              menu={{
+                items: [
+                  {
+                    key: "en",
+                    label: "English",
+                    onClick: () => handleLanguageChange("en"),
+                  },
+                  {
+                    key: "zh",
+                    label: "简体中文",
+                    onClick: () => handleLanguageChange("zh"),
+                  },
+                  {
+                    key: "es",
+                    label: "Español",
+                    onClick: () => handleLanguageChange("es"),
+                  },
+                ],
+                selectedKeys: [i18n.language],
+              }}
+              trigger={["click"]}
             >
-              <Globe className="w-5 h-5 text-gray-600 group-hover:text-blue-500 transition-colors" />
-              <span className="absolute -top-1 -right-1 flex items-center justify-center min-w-[18px] h-[18px] text-[10px] font-medium bg-gray-100 text-gray-600 rounded-full border border-gray-200 shadow-sm px-1 opacity-0 group-hover:opacity-100 transition-opacity">
-                {i18n.language === "zh"
-                  ? t("header.language.zh")
-                  : t("header.language.en")}
-              </span>
-            </button>
+              <button className="p-2 rounded-lg hover:bg-gray-50/80 transition-colors relative group flex items-center gap-1">
+                <Globe className="w-5 h-5 text-gray-600 group-hover:text-blue-500 transition-colors" />
+                <span className="text-xs font-medium text-gray-600 group-hover:text-blue-500 transition-colors">
+                  {i18n.language === "zh"
+                    ? t("header.language.zh")
+                    : i18n.language === "es"
+                    ? t("header.language.es")
+                    : t("header.language.en")}
+                </span>
+                <ChevronDown className="w-3 h-3 text-gray-600 group-hover:text-blue-500 transition-colors" />
+              </button>
+            </Dropdown>
           </div>
         </div>
       </header>

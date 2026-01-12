@@ -202,6 +202,8 @@
     "description": "View detailed model usage records for all users, including usage time, tokens consumed, and costs.",
     "export": "Export Records",
     "dateRange": "Date Range",
+    "input": "Input",
+    "output": "Output",
     "columns": {
       "user": "User",
       "model": "Model",

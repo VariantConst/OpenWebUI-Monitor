@@ -1,8 +1,8 @@
 """
-title: 计费信息按钮
+title: Usage Info Button / 计费信息按钮
 author: fl0w1nd
 author_url: https://github.com/fl0w1nd
-version: 0.1.1
+version: 0.1.2
 icon_url: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAACMElEQVR4nO2ZMWgUQRSGJ4mFgZBGQTAgCqawSbASg6YIFkEsPbCQHNzd/v/sHBe4IvUSUtqlThcCSZEiXUharWxURC20SDCQIGKMxjTBk4E7MhlO7naX3M7C/PCamZud9817M/NuVwgvLy8vZ0VylOQ6ySOSjR7bEYA1kiNpnP+egeMNy74lgmiufMMRW00CkEXaNP5jh0kAzj1E9FhMO78HSCn6CDBeDsbdmM5FgB7gvHwEmPE9kFoeIGvRp1B6AXgOAEqpoVxGAMCenhvAjdiDPUAKlcvlayQJ4FczArO1Wm04FxEAUCV53O6vJYBppwGklKUONdWJlPKukwBRFF0iuW/NuwLgpdkGYMtJAAD3rTnXW2AAvhjtp9Vq9YqLAAVrpecMXxatvknnAEg+tZycb/VJKZ+R3G4ZgAfOAYRhOGYBHJC8mfiBGZxCfSQ/WhBfpZRPEj0to2P0Ybs7AMCmUup2Li6yIAgmrFOnBfFH74Vc1ELFYvGyPoWaL3ZNP05JPs5TMXcVwIYViU96v3Qz+GfcVyVxLE40SL43x4ZheKcbgLVeApD8bazyG6tvwRrfOY30R4U2OXiRAJ+N/h9RFPUbi/nCHBsEwSPRjUql0nX9ceEi0qkNwLL1mxndXq/XBwF8MPsqlcot4ZqklFMWwF+SrwDsWu2vhasCsNQhcicA7glXVSgUBnQRZ25oY2O/1SW3yIOUUkMAKk3nd0iOi7wpPKtO32XtSyJ1C/APUWkkXC3hgzUAAAAASUVORK5CYII=
 required_open_webui_version: 0.4.0
 """
@@ -20,23 +20,31 @@ class Action:
     class Valves(BaseModel):
         show_cost: bool = Field(
             default=True,
-            description="是否显示费用",
-            json_schema_extra={"ui:group": "显示设置"},
+            description="Show cost / 是否显示费用 / Mostrar costo",
+            json_schema_extra={
+                "ui:group": "Display Settings / 显示设置 / Configuración de Visualización"
+            },
         )
         show_balance: bool = Field(
             default=True,
-            description="是否显示余额",
-            json_schema_extra={"ui:group": "显示设置"},
+            description="Show balance / 是否显示余额 / Mostrar saldo",
+            json_schema_extra={
+                "ui:group": "Display Settings / 显示设置 / Configuración de Visualización"
+            },
         )
         show_tokens: bool = Field(
             default=True,
-            description="是否显示token数",
-            json_schema_extra={"ui:group": "显示设置"},
+            description="Show tokens / 是否显示token数 / Mostrar tokens",
+            json_schema_extra={
+                "ui:group": "Display Settings / 显示设置 / Configuración de Visualización"
+            },
         )
         show_tokens_per_sec: bool = Field(
             default=True,
-            description="是否显示每秒输出token数",
-            json_schema_extra={"ui:group": "显示设置"},
+            description="Show tokens per second / 是否显示每秒输出token数 / Mostrar tokens por segundo",
+            json_schema_extra={
+                "ui:group": "Display Settings / 显示设置 / Configuración de Visualización"
+            },
         )
 
     def __init__(self):
@@ -63,7 +71,10 @@ class Action:
                 await __event_emitter__(
                     {
                         "type": "status",
-                        "data": {"description": "没有找到assistant消息", "done": True},
+                        "data": {
+                            "description": "No assistant message found / 没有找到assistant消息 / No se encontró mensaje del asistente",
+                            "done": True,
+                        },
                     }
                 )
             return None
@@ -80,7 +91,10 @@ class Action:
                 await __event_emitter__(
                     {
                         "type": "status",
-                        "data": {"description": "无法获取消息ID", "done": True},
+                        "data": {
+                            "description": "Unable to get message ID / 无法获取消息ID / No se puede obtener el ID del mensaje",
+                            "done": True,
+                        },
                     }
                 )
             return None
@@ -95,7 +109,7 @@ class Action:
                     {
                         "type": "status",
                         "data": {
-                            "description": f"未查找到该消息的计费记录，请联系管理员",
+                            "description": f"Billing record not found, please contact admin / 未查找到该消息的计费记录，请联系管理员 / Registro de facturación no encontrado, contacte al administrador",
                             "done": True,
                         },
                     }
@@ -112,7 +126,7 @@ class Action:
                     {
                         "type": "status",
                         "data": {
-                            "description": f"读取统计文件失败: {str(e)}",
+                            "description": f"Failed to read stats file / 读取统计文件失败 / Error al leer archivo de estadísticas: {str(e)}",
                             "done": True,
                         },
                     }
@@ -147,7 +161,7 @@ class Action:
                 and elapsed_time > 0
             ):
                 stats_array.append(
-                    f"{(stats_data['output_tokens']/elapsed_time):.2f} T/s"
+                    f"{(stats_data['output_tokens'] / elapsed_time):.2f} T/s"
                 )
 
         stats = " | ".join(stat for stat in stats_array)
