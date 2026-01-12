@@ -343,10 +343,17 @@ export default function Header() {
   const actionItems = [
     {
       icon: <Globe className="w-5 h-5" />,
-      label: i18n.language === "zh" ? "简体中文" : "English",
-      onClick: () => handleLanguageChange(i18n.language === "zh" ? "en" : "zh"),
-      color: "from-gray-100 to-gray-50",
-      hoverColor: "group-hover:text-gray-900",
+      dropdown: {
+        menu: {
+          items: [
+            { key: "en", label: "English", onClick: () => handleLanguageChange("en") },
+            { key: "zh", label: "简体中文", onClick: () => handleLanguageChange("zh") },
+            { key: "es", label: "Español", onClick: () => handleLanguageChange("es") },
+          ],
+          selectedKeys: [i18n.language],
+        },
+        trigger: ["click"] as const,
+      },
     },
     {
       icon: <Settings className="w-5 h-5" />,
@@ -415,25 +422,41 @@ export default function Header() {
 
               <div className="flex items-center gap-3">
                 {actionItems.map((item, index) => (
-                  <button
-                    key={index}
-                    onClick={item.onClick}
-                    className="group relative"
-                  >
-                    <div className="flex items-center gap-2 px-4 py-2 rounded-xl bg-gradient-to-r hover:bg-gradient-to-br transition-all duration-300 relative">
-                      <div
-                        className={`absolute inset-0 bg-gradient-to-r ${item.color} rounded-xl opacity-0 group-hover:opacity-100 transition-all duration-300`}
-                      />
-                      <span
-                        className={`relative z-10 ${item.hoverColor} transition-colors duration-300`}
-                      >
-                        {item.icon}
-                      </span>
-                      <span className="relative z-10 hidden md:block text-sm font-medium text-gray-600 group-hover:text-gray-900 transition-colors duration-300">
-                        {item.label}
-                      </span>
-                    </div>
-                  </button>
+                  item.dropdown ? (
+                    <Dropdown
+                      key={index}
+                      menu={item.dropdown.menu}
+                      trigger={item.dropdown.trigger as unknown as ("click" | "contextMenu" | "hover")[]}
+                    >
+                      <button className="group relative">
+                        <div className="flex items-center gap-2 px-4 py-2 rounded-xl bg-gradient-to-r hover:bg-gradient-to-br transition-all duration-300 relative">
+                          <span className="relative z-10 text-gray-600 group-hover:text-gray-900 transition-colors duration-300">
+                            {item.icon}
+                          </span>
+                        </div>
+                      </button>
+                    </Dropdown>
+                  ) : (
+                    <button
+                      key={index}
+                      onClick={item.onClick}
+                      className="group relative"
+                    >
+                      <div className="flex items-center gap-2 px-4 py-2 rounded-xl bg-gradient-to-r hover:bg-gradient-to-br transition-all duration-300 relative">
+                        <div
+                          className={`absolute inset-0 bg-gradient-to-r ${item.color} rounded-xl opacity-0 group-hover:opacity-100 transition-all duration-300`}
+                        />
+                        <span
+                          className={`relative z-10 ${item.hoverColor} transition-colors duration-300`}
+                        >
+                          {item.icon}
+                        </span>
+                        <span className="relative z-10 hidden md:block text-sm font-medium text-gray-600 group-hover:text-gray-900 transition-colors duration-300">
+                          {item.label}
+                        </span>
+                      </div>
+                    </button>
+                  )
                 ))}
               </div>
             </div>
