@@ -1,5 +1,5 @@
 # 使用 Node.js 官方镜像作为基础镜像
-FROM node:18-alpine
+FROM node:24-alpine
 
 # 设置工作目录
 WORKDIR /app
@@ -36,4 +36,4 @@ RUN pnpm build
 EXPOSE 3000
 
 # 使用启动脚本
-CMD ["./start.sh"] 
+CMD ["./start.sh"]
