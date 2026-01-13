@@ -36,30 +36,30 @@ sudo docker compose up -d
 
 ### Obligatorias
 
-| Nombre de Variable | Descripción                                                                      | Ejemplo                    |
-| ------------------ | -------------------------------------------------------------------------------- | -------------------------- |
-| OPENWEBUI_DOMAIN   | Dominio de OpenWebUI                                                             | `https://chat.example.com` |
+| Nombre de Variable | Descripción                                                                             | Ejemplo                    |
+| ------------------ | --------------------------------------------------------------------------------------- | -------------------------- |
+| OPENWEBUI_DOMAIN   | Dominio de OpenWebUI                                                                    | `https://chat.example.com` |
 | OPENWEBUI_API_KEY  | Clave API de OpenWebUI, se encuentra en `Configuración Personal -> Cuenta -> Clave API` | `sk-xxxxxxxxxxxxxxxx`      |
-| API_KEY            | Para verificación de solicitudes API (debe tener menos de 56 caracteres)        | `your-api-key-here`        |
-| ACCESS_TOKEN       | Para verificación de acceso a la página                                          | `your-access-token-here`   |
+| API_KEY            | Para verificación de solicitudes API (debe tener menos de 56 caracteres)                | `your-api-key-here`        |
+| ACCESS_TOKEN       | Para verificación de acceso a la página                                                 | `your-access-token-here`   |
 
 ### Opcionales
 
-| Nombre de Variable          | Descripción                                                                                                                                      | Valor Predeterminado |
-| --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------- |
-| DEFAULT_MODEL_INPUT_PRICE   | Precio de entrada predeterminado del modelo, en USD por millón de tokens                                                                         | `60`                 |
-| DEFAULT_MODEL_OUTPUT_PRICE  | Precio de salida predeterminado del modelo, en USD por millón de tokens                                                                          | `60`                 |
-| DEFAULT_MODEL_PER_MSG_PRICE | Precio predeterminado del modelo por cada mensaje, en USD                                                                                        | `-1`                 |
-| INIT_BALANCE                | Saldo inicial del usuario                                                                                                                        | `0`                  |
+| Nombre de Variable          | Descripción                                                                                                                                                  | Valor Predeterminado |
+| --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------- |
+| DEFAULT_MODEL_INPUT_PRICE   | Precio de entrada predeterminado del modelo, en USD por millón de tokens                                                                                     | `60`                 |
+| DEFAULT_MODEL_OUTPUT_PRICE  | Precio de salida predeterminado del modelo, en USD por millón de tokens                                                                                      | `60`                 |
+| DEFAULT_MODEL_PER_MSG_PRICE | Precio predeterminado del modelo por cada mensaje, en USD                                                                                                    | `-1`                 |
+| INIT_BALANCE                | Saldo inicial del usuario                                                                                                                                    | `0`                  |
 | COST_ON_INLET               | Monto de prededucción en inlet. Puede ser un número fijo para todos los modelos (ej. `0.1`), o formato específico por modelo (ej. `gpt-4:0.32,gpt-3.5:0.01`) | `0`                  |
 
 ## Configuración de Variables de Función
 
-| Nombre de Variable | Descripción                                                                                               |
-| ------------------ | --------------------------------------------------------------------------------------------------------- |
+| Nombre de Variable | Descripción                                                                                                                    |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------ |
 | Api Endpoint       | Complete el dominio del backend de OpenWebUI Monitor desplegado o la dirección IP accesible dentro del contenedor de OpenWebUI |
-| Api Key            | Complete la variable de entorno `API_KEY` establecida en el despliegue del backend                        |
-| Language           | Idioma de visualización de mensajes (en/zh/es)                                                            |
+| Api Key            | Complete la variable de entorno `API_KEY` establecida en el despliegue del backend                                             |
+| Language           | Idioma de visualización de mensajes (en/zh/es)                                                                                 |
 
 ## Preguntas Frecuentes
 

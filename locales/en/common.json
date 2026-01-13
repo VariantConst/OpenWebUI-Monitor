@@ -1,336 +1,336 @@
 {
-  "common": {
-    "appName": "OpenWebUI Monitor",
-    "description": "Usage monitoring and balance management platform for OpenWebUI",
-    "loading": "Loading...",
-    "error": "Failed to load",
-    "confirm": "Confirm",
-    "cancel": "Cancel",
-    "save": "Save",
-    "edit": "Edit",
-    "delete": "Delete",
-    "close": "Close",
-    "back": "Back",
-    "currency": "$",
-    "count": "",
-    "total": "Total",
-    "prev": "Previous",
-    "next": "Next",
-    "page": "Page",
-    "notSet": "Not Set",
-    "enterValue": "Enter Value"
-  },
-
-  "auth": {
-    "accessToken": "Access Token",
-    "accessTokenPlaceholder": "Please enter access token",
-    "accessTokenHelp": "ACCESS_TOKEN Environment Variable",
-    "accessTokenRequired": "Please enter access token",
-    "showToken": "Show Token",
-    "verifying": "Verifying...",
-    "verificationFailed": "Verification failed",
-    "unauthorized": "Unauthorized, please login again",
-    "invalidToken": "Invalid access token",
-    "loginSuccess": "Token verification successful"
-  },
-
-  "header": {
-    "menu": {
-      "copyApiKey": "Copy API KEY",
-      "dataBackup": "Data Migration",
-      "checkUpdate": "Check Update",
-      "logout": "Logout",
-      "settings": "Settings",
-      "title": "Options"
+    "common": {
+        "appName": "OpenWebUI Monitor",
+        "description": "Usage monitoring and balance management platform for OpenWebUI",
+        "loading": "Loading...",
+        "error": "Failed to load",
+        "confirm": "Confirm",
+        "cancel": "Cancel",
+        "save": "Save",
+        "edit": "Edit",
+        "delete": "Delete",
+        "close": "Close",
+        "back": "Back",
+        "currency": "$",
+        "count": "",
+        "total": "Total",
+        "prev": "Previous",
+        "next": "Next",
+        "page": "Page",
+        "notSet": "Not Set",
+        "enterValue": "Enter Value"
     },
-    "messages": {
-      "unauthorized": "Unauthorized, please login again",
-      "apiKeyNotSet": "API key not set or failed to load",
-      "apiKeyCopied": "API key copied to clipboard",
-      "updateCheckFailed": "Failed to check for updates",
-      "latestVersion": "Current version is up to date",
-      "getVersionFailed": "Failed to get version number"
-    },
-    "update": {
-      "newVersion": "New Version Available",
-      "currentVersion": "Current Version",
-      "latestVersion": "Latest Version",
-      "skipUpdate": "Skip Update",
-      "goToUpdate": "Go to Update"
-    },
-    "language": {
-      "zh": "中",
-      "en": "EN"
-    }
-  },
 
-  "home": {
-    "features": {
-      "models": {
-        "title": "Model",
-        "description": "Price Management"
-      },
-      "users": {
-        "title": "User",
-        "description": "Balance Management"
-      },
-      "stats": {
-        "title": "Usage",
-        "description": "Statistics & Visualization"
-      }
-    }
-  },
+    "auth": {
+        "accessToken": "Access Token",
+        "accessTokenPlaceholder": "Please enter access token",
+        "accessTokenHelp": "ACCESS_TOKEN Environment Variable",
+        "accessTokenRequired": "Please enter access token",
+        "showToken": "Show Token",
+        "verifying": "Verifying...",
+        "verificationFailed": "Verification failed",
+        "unauthorized": "Unauthorized, please login again",
+        "invalidToken": "Invalid access token",
+        "loginSuccess": "Token verification successful"
+    },
 
-  "models": {
-    "title": "Model Management",
-    "description": "Manage price configurations for all available models.",
-    "testAll": "Test All Models",
-    "exportConfig": "Export",
-    "importConfig": "Import",
-    "syncWithBaseModel": "Sync with Base Model",
-    "syncAllDerivedModels": "Sync All Derived Models",
-    "syncSuccess": "Price synced successfully",
-    "syncFail": "Failed to sync price",
-    "syncAllSuccess": "All derived models synced successfully",
-    "syncAllFail": "Some derived models failed to sync",
-    "noBaseModel": "This model has no base model",
-    "baseModelNotFound": "Base model not found",
-    "noDerivedModels": "No derived models found",
-    "syncing": "Syncing",
-    "syncTooltip": "Sync prices from base models to all derived models. This will update prices of all derived models based on their base model prices.",
-    "testTooltip": "Click model icon to test individually, test results will be shown in the top right corner of the icon.",
-    "test": {
-      "status": {
-        "valid": "Valid",
-        "invalid": "Invalid",
-        "pending": "Pending",
+    "header": {
+        "menu": {
+            "copyApiKey": "Copy API KEY",
+            "dataBackup": "Data Migration",
+            "checkUpdate": "Check Update",
+            "logout": "Logout",
+            "settings": "Settings",
+            "title": "Options"
+        },
+        "messages": {
+            "unauthorized": "Unauthorized, please login again",
+            "apiKeyNotSet": "API key not set or failed to load",
+            "apiKeyCopied": "API key copied to clipboard",
+            "updateCheckFailed": "Failed to check for updates",
+            "latestVersion": "Current version is up to date",
+            "getVersionFailed": "Failed to get version number"
+        },
+        "update": {
+            "newVersion": "New Version Available",
+            "currentVersion": "Current Version",
+            "latestVersion": "Latest Version",
+            "skipUpdate": "Skip Update",
+            "goToUpdate": "Go to Update"
+        },
+        "language": {
+            "zh": "中",
+            "en": "EN"
+        }
+    },
+
+    "home": {
+        "features": {
+            "models": {
+                "title": "Model",
+                "description": "Price Management"
+            },
+            "users": {
+                "title": "User",
+                "description": "Balance Management"
+            },
+            "stats": {
+                "title": "Usage",
+                "description": "Statistics & Visualization"
+            }
+        }
+    },
+
+    "models": {
+        "title": "Model Management",
+        "description": "Manage price configurations for all available models.",
+        "testAll": "Test All Models",
+        "exportConfig": "Export",
+        "importConfig": "Import",
+        "syncWithBaseModel": "Sync with Base Model",
+        "syncAllDerivedModels": "Sync All Derived Models",
+        "syncSuccess": "Price synced successfully",
+        "syncFail": "Failed to sync price",
+        "syncAllSuccess": "All derived models synced successfully",
+        "syncAllFail": "Some derived models failed to sync",
+        "noBaseModel": "This model has no base model",
+        "baseModelNotFound": "Base model not found",
+        "noDerivedModels": "No derived models found",
+        "syncing": "Syncing",
+        "syncTooltip": "Sync prices from base models to all derived models. This will update prices of all derived models based on their base model prices.",
+        "testTooltip": "Click model icon to test individually, test results will be shown in the top right corner of the icon.",
+        "test": {
+            "status": {
+                "valid": "Valid",
+                "invalid": "Invalid",
+                "pending": "Pending",
+                "testing": "Testing",
+                "complete": "Complete"
+            },
+            "progress": {
+                "title": "Test Progress",
+                "detail": "Click card for details"
+            },
+            "result": {
+                "success": "Valid Models",
+                "failed": "Invalid Models",
+                "complete": "Test complete, click card for details"
+            }
+        },
+        "table": {
+            "name": "Model",
+            "inputPrice": "Input Price $ / M tokens",
+            "outputPrice": "Output Price $ / M tokens",
+            "perMsgPrice": "Per Message Price $ / Message",
+            "notSet": "Not Set",
+            "mobile": {
+                "inputPrice": "Input Price",
+                "outputPrice": "Output Price",
+                "perMsgPrice": "Per Message"
+            },
+            "perMsgPriceTooltip": "Set a negative value to charge by tokens instead of per message",
+            "enterPrice": "Enter price",
+            "priceOverriddenByPerMsg": "Overridden by per message price"
+        },
         "testing": "Testing",
-        "complete": "Complete"
-      },
-      "progress": {
-        "title": "Test Progress",
-        "detail": "Click card for details"
-      },
-      "result": {
-        "success": "Valid Models",
-        "failed": "Invalid Models",
-        "complete": "Test complete, click card for details"
-      }
+        "testComplete": "Test Complete",
+        "testingModels": "Testing Models",
+        "testSuccess": "Success",
+        "testFailed": "Failed",
+        "loading": "Loading model data..."
     },
-    "table": {
-      "name": "Model",
-      "inputPrice": "Input Price $ / M tokens",
-      "outputPrice": "Output Price $ / M tokens",
-      "perMsgPrice": "Per Message Price $ / Message",
-      "notSet": "Not Set",
-      "mobile": {
-        "inputPrice": "Input Price",
-        "outputPrice": "Output Price",
-        "perMsgPrice": "Per Message"
-      },
-      "perMsgPriceTooltip": "Set a negative value to charge by tokens instead of per message",
-      "enterPrice": "Enter price",
-      "priceOverriddenByPerMsg": "Overridden by per message price"
-    },
-    "testing": "Testing",
-    "testComplete": "Test Complete",
-    "testingModels": "Testing Models",
-    "testSuccess": "Success",
-    "testFailed": "Failed",
-    "loading": "Loading model data..."
-  },
 
-  "users": {
-    "title": "User Management",
-    "description": "Manage user accounts and balances. You can view user details, adjust balances, or blacklist users.",
-    "userInfo": "User Info",
-    "balance": "Balance",
-    "id": "ID",
-    "name": "Name",
-    "email": "Email",
-    "role": "Role",
-    "userDetails": "User Details",
-    "nickname": "Nickname",
-    "message": {
-      "updateBalance": {
-        "success": "Balance updated successfully",
-        "error": "Failed to update balance"
-      },
-      "fetchUsersError": "Failed to fetch user list",
-      "invalidNumber": "Please enter a valid number",
-      "deleteSuccess": "User deleted successfully",
-      "deleteError": "Failed to delete user",
-      "blockSuccess": "User has been blocked successfully",
-      "blockError": "Failed to block user",
-      "unblockSuccess": "User has been unblocked successfully",
-      "unblockError": "Failed to unblock user",
-      "fetchError": "Failed to fetch user list"
+    "users": {
+        "title": "User Management",
+        "description": "Manage user accounts and balances. You can view user details, adjust balances, or blacklist users.",
+        "userInfo": "User Info",
+        "balance": "Balance",
+        "id": "ID",
+        "name": "Name",
+        "email": "Email",
+        "role": "Role",
+        "userDetails": "User Details",
+        "nickname": "Nickname",
+        "message": {
+            "updateBalance": {
+                "success": "Balance updated successfully",
+                "error": "Failed to update balance"
+            },
+            "fetchUsersError": "Failed to fetch user list",
+            "invalidNumber": "Please enter a valid number",
+            "deleteSuccess": "User deleted successfully",
+            "deleteError": "Failed to delete user",
+            "blockSuccess": "User has been blocked successfully",
+            "blockError": "Failed to block user",
+            "unblockSuccess": "User has been unblocked successfully",
+            "unblockError": "Failed to unblock user",
+            "fetchError": "Failed to fetch user list"
+        },
+        "actions": "Actions",
+        "deleteConfirm": {
+            "title": "Confirm Delete User",
+            "description": "Are you sure you want to delete user \"{{name}}\"? This action cannot be undone and all related data will be deleted."
+        },
+        "total": "Total",
+        "totalRecords": "records",
+        "search": "Search",
+        "searchPlaceholder": "Search by name or email...",
+        "pressEnter": "Press Enter to search",
+        "blacklist": {
+            "title": "Blacklisted Users",
+            "block": "Block",
+            "unblock": "Unblock",
+            "blockConfirm": {
+                "title": "Confirm Block User",
+                "description": "Are you sure you want to block user \"{{name}}\"? They will not be able to use the service after being blocked."
+            },
+            "unblockConfirm": {
+                "title": "Confirm Unblock User",
+                "description": "Are you sure you want to unblock user \"{{name}}\"? They will be able to use the service again after being unblocked."
+            }
+        },
+        "noResults": {
+            "title": "No users found",
+            "default": "There are no users to display at the moment.",
+            "withFilter": "No users found matching \"{{filter}}\"."
+        },
+        "loading": "Loading user data..."
     },
-    "actions": "Actions",
-    "deleteConfirm": {
-      "title": "Confirm Delete User",
-      "description": "Are you sure you want to delete user \"{{name}}\"? This action cannot be undone and all related data will be deleted."
-    },
-    "total": "Total",
-    "totalRecords": "records",
-    "search": "Search",
-    "searchPlaceholder": "Search by name or email...",
-    "pressEnter": "Press Enter to search",
-    "blacklist": {
-      "title": "Blacklisted Users",
-      "block": "Block",
-      "unblock": "Unblock",
-      "blockConfirm": {
-        "title": "Confirm Block User",
-        "description": "Are you sure you want to block user \"{{name}}\"? They will not be able to use the service after being blocked."
-      },
-      "unblockConfirm": {
-        "title": "Confirm Unblock User",
-        "description": "Are you sure you want to unblock user \"{{name}}\"? They will be able to use the service again after being unblocked."
-      }
-    },
-    "noResults": {
-      "title": "No users found",
-      "default": "There are no users to display at the moment.",
-      "withFilter": "No users found matching \"{{filter}}\"."
-    },
-    "loading": "Loading user data..."
-  },
 
-  "records": {
-    "title": "Usage Records",
-    "description": "View detailed model usage records for all users, including usage time, tokens consumed, and costs.",
-    "export": "Export Records",
-    "dateRange": "Date Range",
-    "input": "Input",
-    "output": "Output",
-    "columns": {
-      "user": "User",
-      "model": "Model",
-      "tokens": "Tokens",
-      "cost": "Cost",
-      "time": "Time",
-      "balance": "Balance"
-    }
-  },
-
-  "update": {
-    "newVersion": "New Version Available",
-    "currentVersion": "Current Version",
-    "latestVersion": "Latest Version",
-    "ignore": "Ignore",
-    "update": "Update",
-    "skipUpdate": "Skip Update",
-    "goToUpdate": "Go to Update"
-  },
-
-  "backup": {
-    "title": "Data Migration",
-    "description": "Export or import database backups for migration and recovery",
-    "export": {
-      "title": "Export Data",
-      "description": "Export current data as backup file",
-      "success": "Export successful",
-      "error": "Export failed"
-    },
-    "import": {
-      "title": "Import Data",
-      "description": "Restore data from backup file",
-      "success": "Import successful",
-      "error": "Import failed"
-    }
-  },
-
-  "panel": {
-    "header": "Usage Statistics Dashboard - OpenWebUI",
-    "title": "Usage Statistics",
-    "byAmount": "By Amount",
-    "byCount": "By Count",
-    "timeRange": {
-      "title": "Time Range",
-      "timeOptions": {
-        "day": "Today",
-        "week": "Week",
-        "month": "Month",
-        "30Days": "30 Days",
-        "all": "All",
-        "custom": "Custom"
-      },
-      "customRange": "Custom Range",
-      "selectTimeRange": "Select Time Range",
-      "selectDate": "Select Date"
-    },
-    "modelUsage": {
-      "title": "Model Usage",
-      "total": "Total",
-      "others": "Others"
-    },
-    "userUsageChart": {
-      "title": "User Usage",
-      "yaxis": {
-        "byAmount": "Amount Spent",
-        "byCount": "Usage Count"
-      }
-    },
-    "usageDetails": {
-      "title": "Usage Details",
-      "table": {
-        "user": "User",
-        "time": "Time",
-        "model": "Model",
-        "tokens": "Tokens",
-        "cost": "Cost",
-        "balance": "Balance"
-      }
-    },
-    "description": "View model usage, user consumption data and detailed usage records.",
-    "overview": {
-      "totalModels": "Models Used",
-      "totalUsers": "Active Users",
-      "totalCost": "Total Cost",
-      "totalCalls": "Total Calls",
-      "totalTokens": "Total Tokens"
-    },
-    "report": {
-      "daily": "Daily Report",
-      "weekly": "Weekly Report",
-      "monthly": "Monthly Report",
-      "thirtyDays": "30 Days Report",
-      "overall": "Overall Report",
-      "custom": "Custom Period Report",
-      "mostUsedModel": "Most Used Model",
-      "topUser": "Top User",
-      "usageCount": "{{count}} times",
-      "spentAmount": "${{amount}} spent"
-    }
-  },
-  "error": {
-    "model": {
-      "failToFetchModels": "Failed to fetch models",
-      "unknownError": "Unknown error",
-      "failToFetchApiKey": "Failed to fetch API KEY",
-      "ApiKeyNotConfigured": "API KEY not configured",
-      "ApiKeyNotFetched": "API KEY not fetched",
-      "nonePositiveNumber": "Please enter a valid positive number",
-      "invalidNumber": "Please enter a valid number",
-      "priceUpdateFail": "Failed to update price",
-      "priceUpdateSuccess": "Price update successful",
-      "invalidImportFormat": "Invalid import data format",
-      "batchPriceUpdateFail": "Batch price update failed",
-      "serverResponse": "Server response update result",
-      "updateSuccess": "Update successful",
-      "numberOfModelPrice": "model(s) price",
-      "failToImport": "Import failed",
-      "failToExport": "Export failed",
-      "failToTest": "Test failed",
-      "failToTestWithoutApiKey": "API Key not fetched, unable to test"
-    },
-    "panel": {
-      "fetchUsageDataFail": "Failed to fetch usage data"
-    },
     "records": {
-      "usageRecord": "Usage record",
-      "exportRecord": "Export record"
+        "title": "Usage Records",
+        "description": "View detailed model usage records for all users, including usage time, tokens consumed, and costs.",
+        "export": "Export Records",
+        "dateRange": "Date Range",
+        "input": "Input",
+        "output": "Output",
+        "columns": {
+            "user": "User",
+            "model": "Model",
+            "tokens": "Tokens",
+            "cost": "Cost",
+            "time": "Time",
+            "balance": "Balance"
+        }
+    },
+
+    "update": {
+        "newVersion": "New Version Available",
+        "currentVersion": "Current Version",
+        "latestVersion": "Latest Version",
+        "ignore": "Ignore",
+        "update": "Update",
+        "skipUpdate": "Skip Update",
+        "goToUpdate": "Go to Update"
+    },
+
+    "backup": {
+        "title": "Data Migration",
+        "description": "Export or import database backups for migration and recovery",
+        "export": {
+            "title": "Export Data",
+            "description": "Export current data as backup file",
+            "success": "Export successful",
+            "error": "Export failed"
+        },
+        "import": {
+            "title": "Import Data",
+            "description": "Restore data from backup file",
+            "success": "Import successful",
+            "error": "Import failed"
+        }
+    },
+
+    "panel": {
+        "header": "Usage Statistics Dashboard - OpenWebUI",
+        "title": "Usage Statistics",
+        "byAmount": "By Amount",
+        "byCount": "By Count",
+        "timeRange": {
+            "title": "Time Range",
+            "timeOptions": {
+                "day": "Today",
+                "week": "Week",
+                "month": "Month",
+                "30Days": "30 Days",
+                "all": "All",
+                "custom": "Custom"
+            },
+            "customRange": "Custom Range",
+            "selectTimeRange": "Select Time Range",
+            "selectDate": "Select Date"
+        },
+        "modelUsage": {
+            "title": "Model Usage",
+            "total": "Total",
+            "others": "Others"
+        },
+        "userUsageChart": {
+            "title": "User Usage",
+            "yaxis": {
+                "byAmount": "Amount Spent",
+                "byCount": "Usage Count"
+            }
+        },
+        "usageDetails": {
+            "title": "Usage Details",
+            "table": {
+                "user": "User",
+                "time": "Time",
+                "model": "Model",
+                "tokens": "Tokens",
+                "cost": "Cost",
+                "balance": "Balance"
+            }
+        },
+        "description": "View model usage, user consumption data and detailed usage records.",
+        "overview": {
+            "totalModels": "Models Used",
+            "totalUsers": "Active Users",
+            "totalCost": "Total Cost",
+            "totalCalls": "Total Calls",
+            "totalTokens": "Total Tokens"
+        },
+        "report": {
+            "daily": "Daily Report",
+            "weekly": "Weekly Report",
+            "monthly": "Monthly Report",
+            "thirtyDays": "30 Days Report",
+            "overall": "Overall Report",
+            "custom": "Custom Period Report",
+            "mostUsedModel": "Most Used Model",
+            "topUser": "Top User",
+            "usageCount": "{{count}} times",
+            "spentAmount": "${{amount}} spent"
+        }
+    },
+    "error": {
+        "model": {
+            "failToFetchModels": "Failed to fetch models",
+            "unknownError": "Unknown error",
+            "failToFetchApiKey": "Failed to fetch API KEY",
+            "ApiKeyNotConfigured": "API KEY not configured",
+            "ApiKeyNotFetched": "API KEY not fetched",
+            "nonePositiveNumber": "Please enter a valid positive number",
+            "invalidNumber": "Please enter a valid number",
+            "priceUpdateFail": "Failed to update price",
+            "priceUpdateSuccess": "Price update successful",
+            "invalidImportFormat": "Invalid import data format",
+            "batchPriceUpdateFail": "Batch price update failed",
+            "serverResponse": "Server response update result",
+            "updateSuccess": "Update successful",
+            "numberOfModelPrice": "model(s) price",
+            "failToImport": "Import failed",
+            "failToExport": "Export failed",
+            "failToTest": "Test failed",
+            "failToTestWithoutApiKey": "API Key not fetched, unable to test"
+        },
+        "panel": {
+            "fetchUsageDataFail": "Failed to fetch usage data"
+        },
+        "records": {
+            "usageRecord": "Usage record",
+            "exportRecord": "Export record"
+        }
     }
-  }
 }

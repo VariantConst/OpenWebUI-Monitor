@@ -1,338 +1,338 @@
 {
-  "common": {
-    "appName": "OpenWebUI Monitor",
-    "description": "专为 OpenWebUI 设计的用量监控和用户余额管理平台",
-    "loading": "加载中...",
-    "error": "加载失败",
-    "confirm": "确认",
-    "cancel": "取消",
-    "save": "保存",
-    "edit": "编辑",
-    "delete": "删除",
-    "close": "关闭",
-    "back": "返回",
-    "currency": "¥",
-    "count": "次",
-    "total": "总计",
-    "prev": "上一页",
-    "next": "下一页",
-    "page": "页",
-    "notSet": "未设置",
-    "enterValue": "请输入"
-  },
-
-  "auth": {
-    "accessToken": "访问令牌",
-    "accessTokenPlaceholder": "请输入访问令牌",
-    "accessTokenHelp": "ACCESS_TOKEN 环境变量",
-    "accessTokenRequired": "请输入访问令牌",
-    "showToken": "显示令牌",
-    "verifying": "验证中...",
-    "verificationFailed": "验证失败",
-    "unauthorized": "未授权，请重新登录",
-    "invalidToken": "无效的访问令牌",
-    "loginSuccess": "令牌验证成功"
-  },
-
-  "header": {
-    "menu": {
-      "copyApiKey": "复制 API KEY",
-      "dataBackup": "数据迁移",
-      "checkUpdate": "检查更新",
-      "logout": "退出登录",
-      "settings": "设置",
-      "title": "选项"
+    "common": {
+        "appName": "OpenWebUI Monitor",
+        "description": "专为 OpenWebUI 设计的用量监控和用户余额管理平台",
+        "loading": "加载中...",
+        "error": "加载失败",
+        "confirm": "确认",
+        "cancel": "取消",
+        "save": "保存",
+        "edit": "编辑",
+        "delete": "删除",
+        "close": "关闭",
+        "back": "返回",
+        "currency": "¥",
+        "count": "次",
+        "total": "总计",
+        "prev": "上一页",
+        "next": "下一页",
+        "page": "页",
+        "notSet": "未设置",
+        "enterValue": "请输入"
     },
-    "messages": {
-      "unauthorized": "未授权，请重新登录",
-      "apiKeyNotSet": "API 密钥未设置或加载失败",
-      "apiKeyCopied": "API 密钥已复制到剪贴板",
-      "updateCheckFailed": "检查更新失败",
-      "latestVersion": "当前已是最新版本",
-      "getVersionFailed": "获取版本号失败"
-    },
-    "update": {
-      "newVersion": "发现新版本",
-      "currentVersion": "当前版本",
-      "latestVersion": "最新版本",
-      "skipUpdate": "暂不更新",
-      "goToUpdate": "前往更新"
-    },
-    "language": {
-      "zh": "中",
-      "en": "EN"
-    }
-  },
 
-  "home": {
-    "features": {
-      "models": {
+    "auth": {
+        "accessToken": "访问令牌",
+        "accessTokenPlaceholder": "请输入访问令牌",
+        "accessTokenHelp": "ACCESS_TOKEN 环境变量",
+        "accessTokenRequired": "请输入访问令牌",
+        "showToken": "显示令牌",
+        "verifying": "验证中...",
+        "verificationFailed": "验证失败",
+        "unauthorized": "未授权，请重新登录",
+        "invalidToken": "无效的访问令牌",
+        "loginSuccess": "令牌验证成功"
+    },
+
+    "header": {
+        "menu": {
+            "copyApiKey": "复制 API KEY",
+            "dataBackup": "数据迁移",
+            "checkUpdate": "检查更新",
+            "logout": "退出登录",
+            "settings": "设置",
+            "title": "选项"
+        },
+        "messages": {
+            "unauthorized": "未授权，请重新登录",
+            "apiKeyNotSet": "API 密钥未设置或加载失败",
+            "apiKeyCopied": "API 密钥已复制到剪贴板",
+            "updateCheckFailed": "检查更新失败",
+            "latestVersion": "当前已是最新版本",
+            "getVersionFailed": "获取版本号失败"
+        },
+        "update": {
+            "newVersion": "发现新版本",
+            "currentVersion": "当前版本",
+            "latestVersion": "最新版本",
+            "skipUpdate": "暂不更新",
+            "goToUpdate": "前往更新"
+        },
+        "language": {
+            "zh": "中",
+            "en": "EN"
+        }
+    },
+
+    "home": {
+        "features": {
+            "models": {
+                "title": "模型管理",
+                "description": "OpenWebUI 提供模型的价格管理"
+            },
+            "users": {
+                "title": "用户管理",
+                "description": "用户信息查询和余额管理"
+            },
+            "stats": {
+                "title": "使用统计",
+                "description": "使用统计数据和可视化"
+            }
+        }
+    },
+
+    "models": {
         "title": "模型管理",
-        "description": "OpenWebUI 提供模型的价格管理"
-      },
-      "users": {
-        "title": "用户管理",
-        "description": "用户信息查询和余额管理"
-      },
-      "stats": {
-        "title": "使用统计",
-        "description": "使用统计数据和可视化"
-      }
-    }
-  },
-
-  "models": {
-    "title": "模型管理",
-    "description": "管理所有可用模型的价格配置。",
-    "testAll": "测试全部模型",
-    "exportConfig": "导出配置",
-    "importConfig": "导入配置",
-    "syncWithBaseModel": "同步上游模型价格",
-    "syncAllDerivedModels": "同步所有派生模型价格",
-    "syncSuccess": "价格同步成功",
-    "syncFail": "价格同步失败",
-    "syncAllSuccess": "所有派生模型价格同步成功",
-    "syncAllFail": "部分派生模型价格同步失败",
-    "noBaseModel": "该模型没有上游模型",
-    "baseModelNotFound": "未找到上游模型",
-    "noDerivedModels": "没有找到派生模型",
-    "syncing": "同步中",
-    "syncTooltip": "将基础模型的价格同步到所有派生模型。这将根据基础模型的价格更新所有派生模型的价格。",
-    "testTooltip": "点击模型图标可进行单独测试，测试结果将显示在图标右上角。",
-    "test": {
-      "status": {
-        "valid": "有效",
-        "invalid": "无效",
-        "pending": "等待中",
+        "description": "管理所有可用模型的价格配置。",
+        "testAll": "测试全部模型",
+        "exportConfig": "导出配置",
+        "importConfig": "导入配置",
+        "syncWithBaseModel": "同步上游模型价格",
+        "syncAllDerivedModels": "同步所有派生模型价格",
+        "syncSuccess": "价格同步成功",
+        "syncFail": "价格同步失败",
+        "syncAllSuccess": "所有派生模型价格同步成功",
+        "syncAllFail": "部分派生模型价格同步失败",
+        "noBaseModel": "该模型没有上游模型",
+        "baseModelNotFound": "未找到上游模型",
+        "noDerivedModels": "没有找到派生模型",
+        "syncing": "同步中",
+        "syncTooltip": "将基础模型的价格同步到所有派生模型。这将根据基础模型的价格更新所有派生模型的价格。",
+        "testTooltip": "点击模型图标可进行单独测试，测试结果将显示在图标右上角。",
+        "test": {
+            "status": {
+                "valid": "有效",
+                "invalid": "无效",
+                "pending": "等待中",
+                "testing": "测试中",
+                "complete": "测试完成"
+            },
+            "progress": {
+                "title": "测试进度",
+                "detail": "点击卡片查看详细信息"
+            },
+            "result": {
+                "success": "有效模型",
+                "failed": "无效模型",
+                "complete": "测试完成，点击卡片查看详细信息"
+            }
+        },
+        "table": {
+            "name": "模型",
+            "inputPrice": "输入价格 ¥ / M tokens",
+            "outputPrice": "输出价格 ¥ / M tokens",
+            "perMsgPrice": "每条消息价格 ¥ / 条",
+            "notSet": "未设置",
+            "mobile": {
+                "inputPrice": "输入价格",
+                "outputPrice": "输出价格",
+                "perMsgPrice": "每条消息"
+            },
+            "perMsgPriceTooltip": "每条消息的固定收费，如果设置为负数则按 token 计费",
+            "priceOverriddenByPerMsg": "已被每条消息价格覆盖",
+            "enterPrice": "输入价格"
+        },
         "testing": "测试中",
-        "complete": "测试完成"
-      },
-      "progress": {
-        "title": "测试进度",
-        "detail": "点击卡片查看详细信息"
-      },
-      "result": {
-        "success": "有效模型",
-        "failed": "无效模型",
-        "complete": "测试完成，点击卡片查看详细信息"
-      }
+        "testComplete": "测试完成",
+        "testingModels": "正在测试模型",
+        "testSuccess": "测试成功",
+        "testFailed": "测试失败",
+        "loading": "正在加载模型数据..."
     },
-    "table": {
-      "name": "模型",
-      "inputPrice": "输入价格 ¥ / M tokens",
-      "outputPrice": "输出价格 ¥ / M tokens",
-      "perMsgPrice": "每条消息价格 ¥ / 条",
-      "notSet": "未设置",
-      "mobile": {
-        "inputPrice": "输入价格",
-        "outputPrice": "输出价格",
-        "perMsgPrice": "每条消息"
-      },
-      "perMsgPriceTooltip": "每条消息的固定收费，如果设置为负数则按 token 计费",
-      "priceOverriddenByPerMsg": "已被每条消息价格覆盖",
-      "enterPrice": "输入价格"
-    },
-    "testing": "测试中",
-    "testComplete": "测试完成",
-    "testingModels": "正在测试模型",
-    "testSuccess": "测试成功",
-    "testFailed": "测试失败",
-    "loading": "正在加载模型数据..."
-  },
 
-  "users": {
-    "title": "用户管理",
-    "description": "管理所有用户的账户信息和余额。您可以查看用户详情、调整余额或将用户加入黑名单。",
-    "userInfo": "用户信息",
-    "balance": "余额",
-    "id": "ID",
-    "name": "姓名",
-    "email": "邮箱",
-    "role": "角色",
-    "userDetails": "用户详细信息",
-    "nickname": "昵称",
-    "message": {
-      "updateBalance": {
-        "success": "余额更新成功",
-        "error": "更新余额失败"
-      },
-      "fetchUsersError": "获取用户列表失败",
-      "invalidNumber": "请输入有效的数字",
-      "deleteSuccess": "用户删除成功",
-      "deleteError": "删除用户失败",
-      "blockSuccess": "用户已成功拉黑",
-      "blockError": "拉黑用户失败",
-      "unblockSuccess": "已成功解除拉黑",
-      "unblockError": "解除拉黑失败",
-      "fetchError": "获取用户列表失败"
+    "users": {
+        "title": "用户管理",
+        "description": "管理所有用户的账户信息和余额。您可以查看用户详情、调整余额或将用户加入黑名单。",
+        "userInfo": "用户信息",
+        "balance": "余额",
+        "id": "ID",
+        "name": "姓名",
+        "email": "邮箱",
+        "role": "角色",
+        "userDetails": "用户详细信息",
+        "nickname": "昵称",
+        "message": {
+            "updateBalance": {
+                "success": "余额更新成功",
+                "error": "更新余额失败"
+            },
+            "fetchUsersError": "获取用户列表失败",
+            "invalidNumber": "请输入有效的数字",
+            "deleteSuccess": "用户删除成功",
+            "deleteError": "删除用户失败",
+            "blockSuccess": "用户已成功拉黑",
+            "blockError": "拉黑用户失败",
+            "unblockSuccess": "已成功解除拉黑",
+            "unblockError": "解除拉黑失败",
+            "fetchError": "获取用户列表失败"
+        },
+        "actions": "操作",
+        "deleteConfirm": {
+            "title": "确认删除用户",
+            "description": "确定要删除用户 \"{{name}}\" 吗？此操作无法撤销，用户的所有相关数据都将被删除。"
+        },
+        "total": "共",
+        "totalRecords": "条记录",
+        "search": "搜索",
+        "searchPlaceholder": "搜索用户名或邮箱...",
+        "pressEnter": "按回车键搜索",
+        "blacklist": {
+            "title": "已拉黑用户",
+            "block": "拉黑",
+            "unblock": "解除拉黑",
+            "blockConfirm": {
+                "title": "确认拉黑用户",
+                "description": "确定要拉黑用户 \"{{name}}\" 吗？拉黑后该用户将无法使用服务。"
+            },
+            "unblockConfirm": {
+                "title": "确认解除拉黑",
+                "description": "确定要解除对用户 \"{{name}}\" 的拉黑吗？解除后该用户将可以继续使用服务。"
+            }
+        },
+        "noResults": {
+            "title": "未找到用户",
+            "default": "暂无用户数据显示。",
+            "withFilter": "未找到与 \"{{filter}}\" 匹配的用户。"
+        },
+        "loading": "正在加载用户数据..."
     },
-    "actions": "操作",
-    "deleteConfirm": {
-      "title": "确认删除用户",
-      "description": "确定要删除用户 \"{{name}}\" 吗？此操作无法撤销，用户的所有相关数据都将被删除。"
-    },
-    "total": "共",
-    "totalRecords": "条记录",
-    "search": "搜索",
-    "searchPlaceholder": "搜索用户名或邮箱...",
-    "pressEnter": "按回车键搜索",
-    "blacklist": {
-      "title": "已拉黑用户",
-      "block": "拉黑",
-      "unblock": "解除拉黑",
-      "blockConfirm": {
-        "title": "确认拉黑用户",
-        "description": "确定要拉黑用户 \"{{name}}\" 吗？拉黑后该用户将无法使用服务。"
-      },
-      "unblockConfirm": {
-        "title": "确认解除拉黑",
-        "description": "确定要解除对用户 \"{{name}}\" 的拉黑吗？解除后该用户将可以继续使用服务。"
-      }
-    },
-    "noResults": {
-      "title": "未找到用户",
-      "default": "暂无用户数据显示。",
-      "withFilter": "未找到与 \"{{filter}}\" 匹配的用户。"
-    },
-    "loading": "正在加载用户数据..."
-  },
 
-  "records": {
-    "title": "使用记录",
-    "description": "查看所有用户的模型使用记录，包括使用时间、消耗的 tokens 和费用等详细信息。",
-    "export": "导出记录",
-    "dateRange": "日期范围",
-    "input": "输入",
-    "output": "输出",
-    "columns": {
-      "user": "用户",
-      "model": "模型",
-      "tokens": "Tokens",
-      "cost": "费用",
-      "time": "时间",
-      "balance": "余额"
-    }
-  },
-
-  "update": {
-    "newVersion": "发现新版本",
-    "currentVersion": "当前版本",
-    "latestVersion": "最新版本",
-    "ignore": "忽略",
-    "update": "更新",
-    "skipUpdate": "暂不更新",
-    "goToUpdate": "前往更新"
-  },
-
-  "backup": {
-    "title": "数据迁移",
-    "description": "导出或导入数据库备份，方便迁移和恢复数据",
-    "export": {
-      "title": "导出数据",
-      "description": "将当前数据导出为备份文件",
-      "success": "导出成功",
-      "error": "导出失败"
-    },
-    "import": {
-      "title": "导入数据",
-      "description": "从备份文件恢复数据",
-      "success": "导入成功",
-      "error": "导入失败"
-    }
-  },
-
-  "panel": {
-    "header": "使用统计看板 - OpenWebUI",
-    "title": "使用统计",
-    "byAmount": "按金额",
-    "byCount": "按次数",
-    "timeRange": {
-      "title": "时间范围",
-      "timeOptions": {
-        "day": "今天",
-        "week": "本周",
-        "month": "本月",
-        "30Days": "近30天",
-        "all": "全部",
-        "custom": "自定义"
-      },
-      "customRange": "自定义范围",
-      "selectTimeRange": "选择时间范围",
-      "selectDate": "选择日期"
-    },
-    "modelUsage": {
-      "title": "模型使用",
-      "total": "总计",
-      "others": "其他"
-    },
-    "userUsageChart": {
-      "title": "用户使用",
-      "yaxis": {
-        "byAmount": "消耗金额",
-        "byCount": "使用次数"
-      }
-    },
-    "usageDetails": {
-      "title": "使用详情",
-      "table": {
-        "user": "用户",
-        "time": "时间",
-        "model": "模型",
-        "tokens": "Tokens",
-        "cost": "费用",
-        "balance": "余额"
-      }
-    },
-    "description": "查看模型使用情况、用户消费数据和详细使用记录。",
-    "overview": {
-      "totalModels": "使用模型数",
-      "totalUsers": "活跃用户数",
-      "totalCost": "总消费金额",
-      "totalCalls": "总调用次数",
-      "totalTokens": "总 Token 数"
-    },
-    "report": {
-      "daily": "今日报告",
-      "weekly": "本周报告",
-      "monthly": "本月报告",
-      "thirtyDays": "近30天报告",
-      "overall": "全时段报告",
-      "custom": "自定义时段报告",
-      "mostUsedModel": "最常用模型",
-      "topUser": "最活跃用户",
-      "usageCount": "使用 {{count}} 次",
-      "spentAmount": "消费 ¥{{amount}}"
-    }
-  },
-  "error": {
-    "model": {
-      "failToFetchModels": "获取模型失败",
-      "unknownError": "未知错误",
-      "failToFetchApiKey": "获取 API KEY 失败",
-      "ApiKeyNotConfigured": "API KEY 未配置",
-      "ApiKeyNotFetched": "API KEY 未获取",
-      "nonePositiveNumber": "请输入有效的正数",
-      "invalidNumber": "请输入有效的数字",
-      "priceUpdateFail": "更新价格失败",
-      "priceUpdateSuccess": "更新价格成功",
-      "invalidImportFormat": "导入的数据格式不正确",
-      "batchPriceUpdateFail": "批量更新价格失败",
-      "serverResponse": "服务器返回的更新结果",
-      "updateSuccess": "成功更新",
-      "numberOfModelPrice": "个模型的价格",
-      "failToImport": "导入失败",
-      "failToExport": "导出失败",
-      "failToTest": "测试失败",
-      "failToTestWithoutApiKey": "API Key 未获取，无法进行测试"
-    },
-    "panel": {
-      "fetchUsageDataFail": "获取使用数据失败"
-    },
     "records": {
-      "usageRecord": "使用记录",
-      "exportRecord": "导出记录"
+        "title": "使用记录",
+        "description": "查看所有用户的模型使用记录，包括使用时间、消耗的 tokens 和费用等详细信息。",
+        "export": "导出记录",
+        "dateRange": "日期范围",
+        "input": "输入",
+        "output": "输出",
+        "columns": {
+            "user": "用户",
+            "model": "模型",
+            "tokens": "Tokens",
+            "cost": "费用",
+            "time": "时间",
+            "balance": "余额"
+        }
     },
-    "exceedsMaxValue": "输入值不能超过 {{max}}",
-    "balanceExceedsLimit": "余额超出最大限制"
-  }
+
+    "update": {
+        "newVersion": "发现新版本",
+        "currentVersion": "当前版本",
+        "latestVersion": "最新版本",
+        "ignore": "忽略",
+        "update": "更新",
+        "skipUpdate": "暂不更新",
+        "goToUpdate": "前往更新"
+    },
+
+    "backup": {
+        "title": "数据迁移",
+        "description": "导出或导入数据库备份，方便迁移和恢复数据",
+        "export": {
+            "title": "导出数据",
+            "description": "将当前数据导出为备份文件",
+            "success": "导出成功",
+            "error": "导出失败"
+        },
+        "import": {
+            "title": "导入数据",
+            "description": "从备份文件恢复数据",
+            "success": "导入成功",
+            "error": "导入失败"
+        }
+    },
+
+    "panel": {
+        "header": "使用统计看板 - OpenWebUI",
+        "title": "使用统计",
+        "byAmount": "按金额",
+        "byCount": "按次数",
+        "timeRange": {
+            "title": "时间范围",
+            "timeOptions": {
+                "day": "今天",
+                "week": "本周",
+                "month": "本月",
+                "30Days": "近30天",
+                "all": "全部",
+                "custom": "自定义"
+            },
+            "customRange": "自定义范围",
+            "selectTimeRange": "选择时间范围",
+            "selectDate": "选择日期"
+        },
+        "modelUsage": {
+            "title": "模型使用",
+            "total": "总计",
+            "others": "其他"
+        },
+        "userUsageChart": {
+            "title": "用户使用",
+            "yaxis": {
+                "byAmount": "消耗金额",
+                "byCount": "使用次数"
+            }
+        },
+        "usageDetails": {
+            "title": "使用详情",
+            "table": {
+                "user": "用户",
+                "time": "时间",
+                "model": "模型",
+                "tokens": "Tokens",
+                "cost": "费用",
+                "balance": "余额"
+            }
+        },
+        "description": "查看模型使用情况、用户消费数据和详细使用记录。",
+        "overview": {
+            "totalModels": "使用模型数",
+            "totalUsers": "活跃用户数",
+            "totalCost": "总消费金额",
+            "totalCalls": "总调用次数",
+            "totalTokens": "总 Token 数"
+        },
+        "report": {
+            "daily": "今日报告",
+            "weekly": "本周报告",
+            "monthly": "本月报告",
+            "thirtyDays": "近30天报告",
+            "overall": "全时段报告",
+            "custom": "自定义时段报告",
+            "mostUsedModel": "最常用模型",
+            "topUser": "最活跃用户",
+            "usageCount": "使用 {{count}} 次",
+            "spentAmount": "消费 ¥{{amount}}"
+        }
+    },
+    "error": {
+        "model": {
+            "failToFetchModels": "获取模型失败",
+            "unknownError": "未知错误",
+            "failToFetchApiKey": "获取 API KEY 失败",
+            "ApiKeyNotConfigured": "API KEY 未配置",
+            "ApiKeyNotFetched": "API KEY 未获取",
+            "nonePositiveNumber": "请输入有效的正数",
+            "invalidNumber": "请输入有效的数字",
+            "priceUpdateFail": "更新价格失败",
+            "priceUpdateSuccess": "更新价格成功",
+            "invalidImportFormat": "导入的数据格式不正确",
+            "batchPriceUpdateFail": "批量更新价格失败",
+            "serverResponse": "服务器返回的更新结果",
+            "updateSuccess": "成功更新",
+            "numberOfModelPrice": "个模型的价格",
+            "failToImport": "导入失败",
+            "failToExport": "导出失败",
+            "failToTest": "测试失败",
+            "failToTestWithoutApiKey": "API Key 未获取，无法进行测试"
+        },
+        "panel": {
+            "fetchUsageDataFail": "获取使用数据失败"
+        },
+        "records": {
+            "usageRecord": "使用记录",
+            "exportRecord": "导出记录"
+        },
+        "exceedsMaxValue": "输入值不能超过 {{max}}",
+        "balanceExceedsLimit": "余额超出最大限制"
+    }
 }

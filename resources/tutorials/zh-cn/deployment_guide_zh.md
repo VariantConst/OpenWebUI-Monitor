@@ -19,8 +19,8 @@ OpenWebUI Monitor 是搭配 [OpenWebUI](https://github.com/open-webui/open-webui
 - `ACCESS_TOKEN`：访问 OpenWebUI Monitor 网页时要输入的访问密钥
 - `INIT_BALANCE`（可选）：用户初始余额，例如 `1.14`
 - `COST_ON_INLET`（可选）：开始对话时的预扣费金额。可以配置为：
-  - 所有模型统一的固定数字，例如 `0.1`
-  - 针对不同模型的配置，例如 `gpt-4:0.32,gpt-3.5:0.01`
+    - 所有模型统一的固定数字，例如 `0.1`
+    - 针对不同模型的配置，例如 `gpt-4:0.32,gpt-3.5:0.01`
 
 3. 前往项目中的 Storage 选项，Create 或者 Connect 到一个 Neon Postgres 数据库<img width="1138" alt="image" src="https://github.com/user-attachments/assets/365e6dea-5d25-42ab-9421-766e2633f389">
 

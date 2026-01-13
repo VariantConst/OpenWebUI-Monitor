@@ -19,8 +19,8 @@ OpenWebUI Monitor está diseñado para funcionar junto con [OpenWebUI](https://g
 - `ACCESS_TOKEN`: Una contraseña requerida para acceder a la página web de OpenWebUI Monitor.
 - `INIT_BALANCE` (opcional): El saldo inicial para los usuarios, por ejemplo, `1.14`.
 - `COST_ON_INLET` (opcional): Monto de prededucción cuando comienza un chat. Se puede configurar como:
-  - Un número fijo para todos los modelos, por ejemplo, `0.1`
-  - Formato específico por modelo, por ejemplo, `gpt-4:0.32,gpt-3.5:0.01`
+    - Un número fijo para todos los modelos, por ejemplo, `0.1`
+    - Formato específico por modelo, por ejemplo, `gpt-4:0.32,gpt-3.5:0.01`
 
 3. Navegue a la sección **Storage** del proyecto y cree o conéctese a una base de datos Neon Postgres.
    <img width="1138" alt="image" src="https://github.com/user-attachments/assets/365e6dea-5d25-42ab-9421-766e2633f389">

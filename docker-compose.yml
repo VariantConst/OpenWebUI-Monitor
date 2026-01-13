@@ -1,40 +1,40 @@
 services:
-  app:
-    image: docker.io/variantconst/openwebui-monitor:latest
-    ports:
-      - "7878:3000"
-    env_file:
-      - .env
-    environment:
-      - POSTGRES_HOST=${POSTGRES_HOST:-db}
-      - POSTGRES_PORT=${POSTGRES_PORT:-5432}
-      - POSTGRES_USER=${POSTGRES_USER:-postgres}
-      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD:-openwebui}
-      - POSTGRES_DATABASE=${POSTGRES_DATABASE:-openwebui_monitor}
-    depends_on:
-      db:
-        condition: service_healthy
-    restart: always
+    app:
+        image: docker.io/variantconst/openwebui-monitor:latest
+        ports:
+            - '7878:3000'
+        env_file:
+            - .env
+        environment:
+            - POSTGRES_HOST=${POSTGRES_HOST:-db}
+            - POSTGRES_PORT=${POSTGRES_PORT:-5432}
+            - POSTGRES_USER=${POSTGRES_USER:-postgres}
+            - POSTGRES_PASSWORD=${POSTGRES_PASSWORD:-openwebui}
+            - POSTGRES_DATABASE=${POSTGRES_DATABASE:-openwebui_monitor}
+        depends_on:
+            db:
+                condition: service_healthy
+        restart: always
 
-  db:
-    profiles:
-      - ${POSTGRES_HOST:+never}
-      - ${POSTGRES_HOST:-default}
-    image: postgres:15-alpine
-    expose:
-      - "5432"
-    environment:
-      - POSTGRES_USER=${POSTGRES_USER:-postgres}
-      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD:-openwebui}
-      - POSTGRES_DB=${POSTGRES_DATABASE:-openwebui_monitor}
-    volumes:
-      - postgres_data:/var/lib/postgresql/data
-    healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-postgres}"]
-      interval: 5s
-      timeout: 5s
-      retries: 5
-    restart: always
+    db:
+        profiles:
+            - ${POSTGRES_HOST:+never}
+            - ${POSTGRES_HOST:-default}
+        image: postgres:15-alpine
+        expose:
+            - '5432'
+        environment:
+            - POSTGRES_USER=${POSTGRES_USER:-postgres}
+            - POSTGRES_PASSWORD=${POSTGRES_PASSWORD:-openwebui}
+            - POSTGRES_DB=${POSTGRES_DATABASE:-openwebui_monitor}
+        volumes:
+            - postgres_data:/var/lib/postgresql/data
+        healthcheck:
+            test: ['CMD-SHELL', 'pg_isready -U ${POSTGRES_USER:-postgres}']
+            interval: 5s
+            timeout: 5s
+            retries: 5
+        restart: always
 
 volumes:
-  postgres_data:
+    postgres_data:
