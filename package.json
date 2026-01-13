@@ -7,7 +7,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
     "db:generate": "drizzle-kit generate:pg",
     "db:push": "tsx scripts/init-db.ts"
   },
@@ -99,15 +101,14 @@
     "@types/react-dom": "18.2.19",
     "autoprefixer": "^10.4.23",
     "drizzle-kit": "^0.20.18",
-    "eslint": "^8.57.1",
-    "eslint-config-next": "14.1.0",
+    "eslint": "^9.39.2",
+    "eslint-config-next": "^16.1.1",
+    "eslint-config-prettier": "^10.1.8",
     "postcss": "^8.5.6",
+    "prettier": "3.7.4",
     "prisma": "^5.22.0",
     "tailwindcss": "^3.4.19",
     "tsx": "^4.21.0",
-    "typescript": "5.3.3"
-  },
-  "resolutions": {
-    "@types/react": "18.2.55"
+    "typescript": "^5.9.3"
   }
 }
