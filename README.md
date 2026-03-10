@@ -12,6 +12,8 @@ A monitoring dashboard for OpenWebUI that tracks usage and manages user balances
 
 > **Note**: If you are using OpenWebUI version 0.5.8 or above, please make sure to update the [function](https://github.com/VariantConst/OpenWebUI-Monitor/blob/main/resources/functions/openwebui_monitor.py) to the latest version.
 
+> 💡 **Related Tool**: Auto-sync OpenAI & Claude model prices to your instance — [openwebui-monitor-sync](https://github.com/Yeraze/openwebui-monitor-sync) by [@Yeraze](https://github.com/Yeraze)
+
 ## Features
 
 - Set prices for each model in OpenWebUI;
