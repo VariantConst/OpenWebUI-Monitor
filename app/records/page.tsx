@@ -174,8 +174,14 @@ export default function RecordsPage() {
                 }
             }
 
+            const token = localStorage.getItem('access_token')
             const response = await fetch(
-                `/api/v1/panel/records?${searchParams.toString()}`
+                `/api/v1/panel/records?${searchParams.toString()}`,
+                {
+                    headers: {
+                        Authorization: `Bearer ${token}`,
+                    },
+                }
             )
             const data = await response.json()
 
@@ -225,7 +231,12 @@ export default function RecordsPage() {
 
     const handleExport = async () => {
         try {
-            const response = await fetch('/api/v1/panel/records/export')
+            const token = localStorage.getItem('access_token')
+            const response = await fetch('/api/v1/panel/records/export', {
+                headers: {
+                    Authorization: `Bearer ${token}`,
+                },
+            })
             const blob = await response.blob()
             const url = window.URL.createObjectURL(blob)
             const a = document.createElement('a')
