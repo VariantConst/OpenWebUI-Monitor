@@ -58,7 +58,7 @@ export default function RecordsPage() {
             title: t('records.columns.user'),
             dataIndex: 'nickname',
             key: 'nickname',
-            filters: users.map((user) => ({ text: user, value: user })),
+            filters: (users || []).map((user) => ({ text: user, value: user })),
             filterMode: 'tree',
             filterSearch: true,
             width: 200,
@@ -80,7 +80,7 @@ export default function RecordsPage() {
             title: t('records.columns.model'),
             dataIndex: 'model_name',
             key: 'model_name',
-            filters: models.map((model) => ({ text: model, value: model })),
+            filters: (models || []).map((model) => ({ text: model, value: model })),
             filterMode: 'tree',
             filterSearch: true,
             width: 200,
@@ -175,6 +175,10 @@ export default function RecordsPage() {
             }
 
             const token = localStorage.getItem('access_token')
+            if (!token) {
+                toast.error(t('auth.accessTokenRequired'))
+                return
+            }
             const response = await fetch(
                 `/api/v1/panel/records?${searchParams.toString()}`,
                 {
@@ -183,19 +187,31 @@ export default function RecordsPage() {
                     },
                 }
             )
+            
+            if (!response.ok) {
+                if (response.status === 401) {
+                    toast.error(t('auth.invalidToken'))
+                    localStorage.removeItem('access_token')
+                    window.location.href = '/token'
+                } else {
+                    toast.error(t('error.panel.fetchUsageDataFail'))
+                }
+                return
+            }
+            
             const data = await response.json()
 
-            setRecords(data.records)
+            setRecords(data.records || [])
             setTableParams({
                 ...params,
                 pagination: {
                     ...params.pagination,
-                    total: data.total,
+                    total: data.total || 0,
                 },
             })
 
-            setUsers(data.users as string[])
-            setModels(data.models as string[])
+            setUsers((data.users as string[]) || [])
+            setModels((data.models as string[]) || [])
         } catch (error) {
             toast.error(t('error.panel.fetchUsageDataFail'))
         } finally {
@@ -232,11 +248,28 @@ export default function RecordsPage() {
     const handleExport = async () => {
         try {
             const token = localStorage.getItem('access_token')
+            if (!token) {
+                toast.error(t('auth.accessTokenRequired'))
+                window.location.href = '/token'
+                return
+            }
             const response = await fetch('/api/v1/panel/records/export', {
                 headers: {
                     Authorization: `Bearer ${token}`,
                 },
             })
+            
+            if (!response.ok) {
+                if (response.status === 401) {
+                    toast.error(t('auth.invalidToken'))
+                    localStorage.removeItem('access_token')
+                    window.location.href = '/token'
+                } else {
+                    toast.error(t('error.model.failToExport'))
+                }
+                return
+            }
+            
             const blob = await response.blob()
             const url = window.URL.createObjectURL(blob)
             const a = document.createElement('a')
