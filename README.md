@@ -87,4 +87,4 @@ OpenWebUI Monitor will only start tracking a user’s information after the user
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=VariantConst/OpenWebUI-Monitor&type=Date)](https://star-history.com/#VariantConst/OpenWebUI-Monitor&Date)
+[![Star History Chart](https://star-history.dera.page/svg?repos=VariantConst/OpenWebUI-Monitor&type=Date)](https://star-history.dera.page/#VariantConst/OpenWebUI-Monitor&type=date)
